@@ -1,14 +1,19 @@
 import React from "react";
-
+import Image from "next/image";
+import anh from "./anhfoget.jpg";
+import Link from "next/link";
 const ForgetPass = () => {
   return (
     <div className="min-h-screen flex justify-center items-center p-5 md:p-10">
-      <div className="grid md:grid-cols-2 grid-cols-1 border rounded-3xl overflow-hidden">
+      <div className="grid md:grid-cols-2 grid-cols-1 rounded-3xl overflow-hidden">
         <div>
-          <img
-            src="https://img.freepik.com/premium-vector/vector-abstract-seamless-pattern-with-stars-blue-background_117177-1008.jpg"
+          <Image
+            src={anh}
             className="rounded-3xl w-full h-auto object-cover"
             alt="Background"
+            width={1920} // Provide the actual width of the image
+            height={1080} // Provide the actual height of the image
+            priority
           />
         </div>
         <div className="flex justify-center items-center p-5">
@@ -16,7 +21,9 @@ const ForgetPass = () => {
             <h1 className="text-center mb-10 font-bold text-3xl md:text-4xl">
               Quên Mật Khẩu
             </h1>
-            <h2 className="text-center mb-5">Vui Lòng Nhập Thông Tin Bên Dưới</h2>
+            <h2 className="text-center mb-5">
+              Vui Lòng Nhập Thông Tin Bên Dưới
+            </h2>
             <input
               type="text"
               className="bg-gray-100 border outline-none rounded-md py-3 w-full px-4 mb-3"
@@ -38,10 +45,10 @@ const ForgetPass = () => {
             <div className="text-center mb-4">
               <p className="text-gray-600">01:00</p>
             </div>
-            <a href="/dangky" className="text-center block mt-4">
+            <Link href="/dangky" className="text-center block mt-4">
               Nếu Không Nhận được mã?{" "}
               <span style={{ color: "#FFD700" }}>Gửi Lại</span>
-            </a>
+            </Link>
             <br />
             <button
               type="submit"
@@ -51,9 +58,9 @@ const ForgetPass = () => {
             </button>
             <br />
             <div className="flex justify-center mt-5">
-              <a href="#" className="text-blue-500 hover:underline">
+              <Link href="/SignIn" className="text-yellow-400 hover:underline">
                 Trở Về
-              </a>
+              </Link>
             </div>
           </form>
         </div>

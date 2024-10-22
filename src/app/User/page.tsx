@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const User = () => {
   const days = Array.from({ length: 31 }, (_, i) => i + 1);
@@ -13,10 +15,12 @@ const User = () => {
       <div className="grid grid-cols-1 gap-6 px-4 py-[60px] sm:px-10 md:px-20 md:grid-cols-3">
         <div className="col-1 p-4 bg-white rounded-lg max-w-sm mx-auto">
           <div className="flex items-center mb-4">
-            <img
+            <Image
+              src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/testimonial/testi-shape1.png"
+              alt="anh1"
               className="w-16 h-16 rounded-full mr-4"
-              src="https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-1/456665061_1225995405241232_8942598692084260272_n.jpg?stp=dst-jpg_s200x200&_nc_cat=103&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=pfJVr31iExsQ7kNvgFogMt9&_nc_zt=24&_nc_ht=scontent.fsgn4-1.fna&_nc_gid=AyyW_wZRM4I8Pd2_fTTIw9M&oh=00_AYAkelpHm51dh2TaEjE7RtNtbbbNQ_mX2RqQg-8e6qj70Q&oe=6712EF3D"
-              alt="Ảnh đại diện"
+              width={64} // 16 * 4 (for Tailwind's default rem size)
+              height={64} // 16 * 4 (for Tailwind's default rem size)
             />
             <div>
               <p className="text-sm md:text-lg">Tài khoản của</p>
@@ -26,7 +30,7 @@ const User = () => {
 
           <div className="mt-4">
             <div className="py-2">
-              <a
+              <Link
                 href="/User"
                 className="flex items-center text-gray-700 hover:text-[#573CFF]"
               >
@@ -47,11 +51,11 @@ const User = () => {
                   />
                 </svg>
                 Thông tin tài khoản
-              </a>
+              </Link>
             </div>
 
             <div className="border-t border-gray-300 py-2">
-              <a
+              <Link
                 href="/UserAddress"
                 className="flex items-center text-gray-700 hover:text-[#573CFF]"
               >
@@ -68,11 +72,11 @@ const User = () => {
                   />
                 </svg>
                 Sổ địa chỉ
-              </a>
+              </Link>
             </div>
 
             <div className="border-t border-gray-300 py-2">
-              <a
+              <Link
                 href="/UserOrder"
                 className="flex items-center text-gray-700 hover:text-[#573CFF]"
               >
@@ -93,11 +97,11 @@ const User = () => {
                   />
                 </svg>
                 Quản lý đơn hàng
-              </a>
+              </Link>
             </div>
 
             <div className="border-t border-gray-300 py-2">
-              <a
+              <Link
                 href="/UserNotification"
                 className="flex items-center text-gray-700 hover:text-[#573CFF]"
               >
@@ -114,11 +118,11 @@ const User = () => {
                   />
                 </svg>
                 Thông báo
-              </a>
+              </Link>
             </div>
 
             <div className="border-t border-gray-300 py-2">
-              <a
+              <Link
                 href="/UserDiscount"
                 className="flex items-center text-gray-700 hover:text-[#573CFF]"
               >
@@ -141,12 +145,12 @@ const User = () => {
                   </g>
                 </svg>
                 Mã giảm giá
-              </a>
+              </Link>
             </div>
 
             <div className="border-t border-gray-300 py-2">
-              <a
-                href="/"
+              <Link
+                href="#"
                 className="flex items-center text-gray-700 hover:text-[#573CFF]"
               >
                 <svg
@@ -162,7 +166,7 @@ const User = () => {
                   />
                 </svg>
                 Sản phẩm đã xem
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -176,26 +180,28 @@ const User = () => {
             <div>
               <form>
                 <div className="flex flex-col md:flex-row items-start mb-4">
-                  <div className="mr-0 md:mr-4 mb-4 md:mb-0">
-                    <img
-                      src="https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-1/456665061_1225995405241232_8942598692084260272_n.jpg?stp=dst-jpg_s200x200&_nc_cat=103&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=pfJVr31iExsQ7kNvgFogMt9&_nc_zt=24&_nc_ht=scontent.fsgn4-1.fna&_nc_gid=AyyW_wZRM4I8Pd2_fTTIw9M&oh=00_AYAkelpHm51dh2TaEjE7RtNtbbbNQ_mX2RqQg-8e6qj70Q&oe=6712EF3D"
+                  <div className="md:mr-4 mb-4 md:mb-0">
+                    <Image
+                      src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/testimonial/testi-shape1.png"
                       alt="anh"
                       className="w-[80px] h-auto rounded-full"
+                      height={80} // Set height to maintain aspect ratio
+                      width={80} // Set width to match the desired size
                     />
                   </div>
-                  <div className="flex-1">
-                    <div className="mb-4 flex justify-between items-center">
-                      <label className="block text-gray-700 text-sm font-bold mb-2">
-                        Họ_tên
+                  <div className="flex-col">
+                    <div className="mb-4 ">
+                      <label className="block text-gray-700 text-sm font-bold mb-2 ">
+                        Họ tên
                       </label>
                       <input
                         type="text"
                         id="name"
                         placeholder="Nhập họ tên"
-                        className="appearance-none border mx-0 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        className="appearance-none border rounded  py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                       />
                     </div>
-                    <div className="mb-4 flex justify-between items-center">
+                    <div className="mb-4 ">
                       <label className="block text-gray-700 text-sm font-bold mb-2">
                         Nickname
                       </label>

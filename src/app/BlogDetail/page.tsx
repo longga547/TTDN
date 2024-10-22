@@ -1,13 +1,15 @@
 import React from "react";
+import Image from "next/image";
 
 const BlogDetail = () => {
   return (
     <div>
       <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
-        <img
+        <Image
           src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/bretcome-bg.jpg"
           alt="Image"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover w-full h-full"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold">
           Blog Detail
@@ -21,10 +23,12 @@ const BlogDetail = () => {
           {/* Main Content */}
           <div className="lg:col-span-8">
             <div className="mb-4">
-              <img
+              <Image
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/blog-detials1.png"
-                className="w-full rounded-lg"
                 alt="Blog header"
+                width={1200}
+                height={675}
+                className="rounded-lg"
               />
               <div className="mt-4">
                 <div className="p-6">
@@ -80,10 +84,12 @@ const BlogDetail = () => {
 
                 {/* Author Section */}
                 <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4 mt-8 ">
-                  <img
+                  <Image
                     src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/blog-team.png"
                     alt="Profile"
-                    className="w-60 h-60 rounded object-cover "
+                    width={240}
+                    height={240}
+                    className="rounded object-cover"
                   />
                   <div className="mt-4 sm:mt-0">
                     <h2 className="text-3xl font-bold text-black mb-4">
@@ -122,9 +128,9 @@ const BlogDetail = () => {
                             <g
                               fill="none"
                               stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="1.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="bevel"
+                              strokeWidth="2"
                             >
                               <path d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12" />
                               <path d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01" />
@@ -176,10 +182,12 @@ const BlogDetail = () => {
               <h5 className="text-2xl font-semibold mb-6">Recent Comments</h5>
               <div className="w-20 h-1 bg-[#4026E1] mb-8"></div>
               <div className="flex flex-col md:flex-row mb-12">
-                <img
+                <Image
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/user1.png"
-                  className="rounded-full w-40 h-40 md:w-40 md:h-30 mr-6"
                   alt="User"
+                  width={160}
+                  height={160}
+                  className="rounded-full mr-6"
                 />
                 <div className="flex-1">
                   <div className="flex justify-between">
@@ -203,10 +211,12 @@ const BlogDetail = () => {
               </div>
               <hr />
               <div className="flex flex-col md:flex-row mt-12">
-                <img
+                <Image
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/user2.png"
-                  className="rounded-full w-40 h-40 md:w-40 md:h-30 mr-6"
                   alt="User"
+                  width={160}
+                  height={160}
+                  className="rounded-full mr-6"
                 />
                 <div className="flex-1">
                   <div className="flex justify-between">
@@ -280,12 +290,15 @@ const BlogDetail = () => {
               </h3>
               <div className="border-t border-gray-300 mb-6"></div>
               <div className="space-y-6">
-                <div className="flex items-center space-x-6 bg-white p-6 rounded-lg shadow-md">
-                  <img
+                <div className="flex items-center space-x-6 bg-white p-2 rounded-lg shadow-md">
+                  <Image
                     src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/recent1.png"
                     alt="Post Thumbnail"
-                    className="w-24 h-24 object-cover rounded-lg"
+                    width={96}
+                    height={96}
+                    className="object-cover rounded-lg"
                   />
+
                   <div>
                     <p className="text-sm text-gray-500 flex items-center space-x-1 mb-2">
                       <span>July 24, 2023</span>
@@ -299,11 +312,13 @@ const BlogDetail = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-6 bg-white p-6 rounded-lg shadow-md">
-                  <img
+                <div className="flex items-center space-x-6 bg-white p-2 rounded-lg shadow-md">
+                  <Image
                     src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/recent2.png"
                     alt="Post Thumbnail"
-                    className="w-24 h-24 object-cover rounded-lg"
+                    width={96}
+                    height={96}
+                    className="object-cover rounded-lg"
                   />
                   <div>
                     <p className="text-sm text-gray-500 flex items-center space-x-1 mb-2">
@@ -318,11 +333,13 @@ const BlogDetail = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-6 bg-white p-6 rounded-lg shadow-md">
-                  <img
+                <div className="flex items-center space-x-6 bg-white p-2 rounded-lg shadow-md">
+                  <Image
                     src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/recent3.png"
                     alt="Post Thumbnail"
-                    className="w-24 h-24 object-cover rounded-lg"
+                    width={96}
+                    height={96}
+                    className="object-cover rounded-lg"
                   />
                   <div>
                     <p className="text-sm text-gray-500 flex items-center space-x-1 mb-2">

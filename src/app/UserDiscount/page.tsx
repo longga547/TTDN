@@ -1,15 +1,18 @@
 import React from "react";
-
+import Image from "next/image";
+import Link from "next/link";
 const UserDiscount = () => {
   return (
     <div>
       <div className="grid grid-cols-1 gap-6 px-4 py-[60px] sm:px-10 md:px-20 md:grid-cols-3">
         <div className="col-1 p-4 bg-white rounded-lg">
           <div className="flex items-center mb-4">
-            <img
+            <Image
               className="w-16 h-16 rounded-full mr-4"
-              src="https://scontent.fsgn4-1.fna.fbcdn.net/v/t39.30808-1/456665061_1225995405241232_8942598692084260272_n.jpg?stp=dst-jpg_s200x200&_nc_cat=103&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=pfJVr31iExsQ7kNvgFogMt9&_nc_zt=24&_nc_ht=scontent.fsgn4-1.fna&_nc_gid=AyyW_wZRM4I8Pd2_fTTIw9M&oh=00_AYAkelpHm51dh2TaEjE7RtNtbbbNQ_mX2RqQg-8e6qj70Q&oe=6712EF3D"
+              src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/testimonial/testi-shape2.png"
               alt="Ảnh đại diện"
+              width={64}
+              height={64}
             />
             <div>
               <p className="text-l">Tài khoản của</p>
@@ -19,7 +22,7 @@ const UserDiscount = () => {
 
           <div className="mt-4">
             <div className="py-2">
-              <a
+              <Link
                 href="/User"
                 className="flex items-center text-gray-700 hover:text-[#573CFF]"
               >
@@ -40,10 +43,10 @@ const UserDiscount = () => {
                   />
                 </svg>
                 Thông tin tài khoản
-              </a>
+              </Link>
             </div>
             <div className="border-t border-gray-300 py-2">
-              <a
+              <Link
                 href="/UserAddress"
                 className="flex items-center text-gray-700 hover:text-[#573CFF]"
               >
@@ -60,10 +63,10 @@ const UserDiscount = () => {
                   />
                 </svg>
                 Sổ địa chỉ
-              </a>
+              </Link>
             </div>
             <div className="border-t border-gray-300 py-2">
-              <a
+              <Link
                 href="/UserOrder"
                 className="flex items-center text-gray-700 hover:text-[#573CFF]"
               >
@@ -84,10 +87,10 @@ const UserDiscount = () => {
                   />
                 </svg>
                 Quản lý đơn hàng
-              </a>
+              </Link>
             </div>
             <div className="border-t border-gray-300 py-2">
-              <a
+              <Link
                 href="/UserNotification"
                 className="flex items-center text-gray-700 hover:text-[#573CFF]"
               >
@@ -104,10 +107,10 @@ const UserDiscount = () => {
                   />
                 </svg>
                 Thông báo
-              </a>
+              </Link>
             </div>
             <div className="border-t border-gray-300 py-2">
-              <a
+              <Link
                 href="/UserDiscount"
                 className="flex items-center text-gray-700 hover:text-[#573CFF]"
               >
@@ -121,20 +124,20 @@ const UserDiscount = () => {
                   <g
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
                   >
                     <path d="M7.729 15.286h5m-2.502-2.5h.01m-.008 5h.01M6.5 3.697C9.533 6.782 14.536.124 17.496 2.54C19.199 3.93 18.66 7 16.449 9" />
                     <path d="M18.664 6.578c.983.179 1.204.765 1.497 2.392c.265 1.466.339 3.225.339 3.974a1.3 1.3 0 0 1-.338.743c-2.057 2.035-6.137 5.878-8.196 7.787c-.808.681-2.028.696-2.886.07c-1.756-1.491-3.443-3.178-5.097-4.701c-.664-.808-.648-1.956.076-2.717c2.178-2.135 6.12-5.789 8.346-7.807c.223-.18.496-.294.79-.319c.498 0 1.355.063 2.19.109" />
                   </g>
                 </svg>
                 Mã giảm giá
-              </a>
+              </Link>
             </div>
             <div className="border-t border-gray-300 py-2">
-              <a
-                href="/"
+              <Link
+                href="#"
                 className="flex items-center text-gray-700 hover:text-[#573CFF]"
               >
                 <svg
@@ -150,7 +153,7 @@ const UserDiscount = () => {
                   />
                 </svg>
                 Sản phẩm đã xem
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -160,44 +163,44 @@ const UserDiscount = () => {
           </div>
           <div className="flex items-center justify-between py-3">
             <div>
-              <a
+              <Link
                 href="/"
                 className="text-gray-700 hover:text-gray-900 transition-colors duration-300"
               >
                 Tất cả
-              </a>
+              </Link>
             </div>
             <div className="flex-1 flex justify-center">
-              <a
+              <Link
                 href="/"
                 className="text-gray-700 hover:text-gray-900 transition-colors duration-300"
               >
                 Tiki
-              </a>
+              </Link>
             </div>
             <div className="flex-1 flex justify-center">
-              <a
+              <Link
                 href="/"
                 className="text-gray-700 hover:text-gray-900 transition-colors duration-300"
               >
                 Nhà bán
-              </a>
+              </Link>
             </div>
             <div className="flex-1 flex justify-center">
-              <a
+              <Link
                 href="/"
                 className="text-gray-700 hover:text-gray-900 transition-colors duration-300"
               >
                 Ưu đãi thanh toán
-              </a>
+              </Link>
             </div>
             <div>
-              <a
+              <Link
                 href="/"
                 className="text-gray-700 hover:text-gray-900 transition-colors duration-300"
               >
                 Hết hiệu lực
-              </a>
+              </Link>
             </div>
           </div>
           <div className="bg-gray-100 flex justify-center items-center mt-10">

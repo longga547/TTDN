@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const Cart = () => {
   return (
     <div>
@@ -46,12 +46,12 @@ const Cart = () => {
               {/* 1 */}
               <div className="flex items-center justify-between border-b py-4">
                 <div className="flex items-center">
-                  <img
+                  <Image
                     alt=""
                     className="w-20 h-20 object-cover"
-                    height="100"
                     src="https://storage.googleapis.com/a1aa/image/eAbJk5KregiYlkgpebqSogv1ByLIVZe9rMEKSeg1OxspSG9cC.jpg"
-                    width="100"
+                    width={100} // Set width to match the original
+                    height={100} // Set height to match the original
                   />
                   <div className="ml-4">
                     <h2 className="text-lg font-semibold">
@@ -86,12 +86,12 @@ const Cart = () => {
               {/* 2 */}
               <div className="flex items-center justify-between border-b py-4">
                 <div className="flex items-center">
-                  <img
+                  <Image
                     alt=""
                     className="w-20 h-20 object-cover"
-                    height="100"
+                    height={100}
                     src="https://storage.googleapis.com/a1aa/image/ERGhlqJSmFKkD9uKwyKKJpEYZArr0PkESFmpMZfTmBXLZ0zJA.jpg"
-                    width="100"
+                    width={100}
                   />
                   <div className="ml-4">
                     <h2 className="text-lg font-semibold">

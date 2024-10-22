@@ -1,6 +1,7 @@
 import React from "react";
 import Anhdk from "./anhsignup.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 const SignUp = () => {
   return (
@@ -46,9 +47,9 @@ const SignUp = () => {
               Đăng Ký Ngay
             </button>
             <br />
-            <a href="/dangky" className="text-center block mt-4">
+            <Link href="/dangky" className="text-center block mt-4">
               Trở Về{" "}
-            </a>
+            </Link>
           </form>
         </div>
       </div>

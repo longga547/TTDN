@@ -1,13 +1,17 @@
 import React from "react";
+import Image from "next/image";
 
 const Contact = () => {
   return (
     <div className="bg-gray-100">
       <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
-        <img
+        <Image
           src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/bretcome-bg.jpg"
           alt="Image"
           className="w-full h-full object-cover"
+          width={800} // Set appropriate width
+          height={600} // Set appropriate height
+          priority
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold">
           Contact

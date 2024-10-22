@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 const GalleryDetail = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -7,6 +8,9 @@ const GalleryDetail = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const bgImageUrl = 'https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/bretcome-bg.jpg';
+  const detailsImageUrl1 = 'https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/project/project-detials1.jpg';
+  const detailsImageUrl2 = 'https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/project/project-detials2.jpg';
   
   // Mảng nội dung câu hỏi
   const questions = [
@@ -18,10 +22,8 @@ const GalleryDetail = () => {
   return (
     <div className="bg-gray-100">
       <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
-        <img
-          src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/bretcome-bg.jpg"
-          alt="Image"
-          className="w-full h-full object-cover"
+        <Image
+          src={bgImageUrl} alt="Image" width={1920} height={400} className="w-full h-full object-cover"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold">
           Gallery Detail
@@ -36,9 +38,9 @@ const GalleryDetail = () => {
               <div className="py-10">
                 <div className="flex justify-center">
                   <div className="relative overflow-hidden">
-                    <img
-                      src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/project/project-detials1.jpg"
-                      alt=""
+                    <Image
+                      src={detailsImageUrl1}
+                      alt="Imgae" width={1920} height={400}
                       className="w-full max-w-7xl transition-transform duration-300 transform hover:scale-105"
                     />
                   </div>
@@ -69,12 +71,11 @@ const GalleryDetail = () => {
 
               <div className="flex items-center justify-center">
               <div className="relative overflow-hidden">
-              <img
+              <Image
                 alt="Group of people discussing a project"
                 className="w-full  h-auto rounded-none mr-4 transition-transform duration-300 transform hover:scale-105"
-                height="300"
-                src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/project/project-detials2.jpg"
-                width="500"
+                height="300" width="500"
+                src={detailsImageUrl2}
               />
                 </div>          
             <div className="w-2/5">

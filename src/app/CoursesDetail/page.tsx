@@ -1,13 +1,16 @@
 import React from "react";
-
+import Image from "next/image";
 const CoursesDetail = () => {
   return (
     <div>
       <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
-        <img
+        <Image
           src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/bretcome-bg.jpg"
           alt="Image"
           className="w-full h-full object-cover"
+          width={800} // Set appropriate width
+          height={600} // Set appropriate height
+          priority
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold">
           Courses Detail
@@ -197,11 +200,15 @@ const CoursesDetail = () => {
                   <h3 className="text-2xl font-bold mb-4">New Courses</h3>
                   <div className="">
                     <div className="flex  ">
-                      <img
+                      <Image
                         src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/latest1.jpg"
                         alt="Modern Languages"
-                        className="w-16 h-16  object-cover mr-4"
+                        className="w-16 h-16 object-cover mr-4"
+                        width={64} // Provide the actual width of the image
+                        height={64} // Provide the actual height of the image
+                        priority
                       />
+
                       <div>
                         <p className="text-sm text-gray-500">by Advanced</p>
                         <h4 className="font-semibold text-lg">
@@ -268,10 +275,13 @@ const CoursesDetail = () => {
                     </div>
 
                     <div className="flex  ">
-                      <img
+                      <Image
                         src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/latest2.jpg"
                         alt=""
-                        className="w-16 h-16  object-cover mr-4"
+                        className="w-16 h-16 object-cover mr-4"
+                        width={64} // Provide the actual width of the image
+                        height={64} // Provide the actual height of the image
+                        priority
                       />
                       <div>
                         <p className="text-sm text-gray-500">by Advanced</p>
@@ -339,10 +349,13 @@ const CoursesDetail = () => {
                     </div>
 
                     <div className="flex  ">
-                      <img
+                      <Image
                         src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/latest3.jpg"
                         alt="Development Studies"
-                        className="w-16 h-16  object-cover mr-4 "
+                        className="w-16 h-16 object-cover mr-4"
+                        width={64} // Provide the actual width of the image
+                        height={64} // Provide the actual height of the image
+                        priority
                       />
                       <div>
                         <p className="text-sm text-gray-500">by Advanced</p>
@@ -414,11 +427,16 @@ const CoursesDetail = () => {
 
               <div className="w-full md:w-2/3 mt-8 md:mt-0">
                 <div>
-                  <img
+                  <Image
                     src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course-details.jpg"
                     alt="Course Overview"
-                    className=" shadow-lg w-full h-auto"
+                    className="shadow-lg w-full h-auto"
+                    width={1920} // Provide the actual width of the image
+                    height={1080} // Provide the actual height of the image
+                    layout="responsive"
+                    priority
                   />
+
                   <div className="mt-6">
                     <h2 className="text-3xl font-bold mb-4">Course Overview</h2>
                     <p className="text-gray-500 font-normal mb-4">

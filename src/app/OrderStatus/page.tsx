@@ -1,11 +1,12 @@
 import React from "react";
-
+import Image from "next/image";
+import Link from "next/link";
 const OrderStatus = () => {
   return (
     <div>
       {/*  */}
       <div className="flex items-center space-x-4 my-10 px-[90px]">
-        <a href="/quanlydonhang">
+        <Link href="/quanlydonhang">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -15,12 +16,12 @@ const OrderStatus = () => {
           >
             <path
               fill="currentColor"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M10.53 5.47a.75.75 0 0 1 0 1.06l-4.72 4.72H20a.75.75 0 0 1 0 1.5H5.81l4.72 4.72a.75.75 0 1 1-1.06 1.06l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 0 1 1.06 0"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             />
           </svg>
-        </a>
+        </Link>
         <span className="text-black text-4xl font-medium">DH10000001</span>
       </div>
       {/*  */}
@@ -28,127 +29,134 @@ const OrderStatus = () => {
         <div className="w-2/3 p-4">
           <div className="bg-gray-100 px-5 py-5 mb-10">
             <table className="w-full h-auto">
-              <tr>
-                <td className="flex justify-between items-center font-semibold text-lg">
-                  <div>
-                    <span className="">Thông Tin Nhận Hàng</span>
-                  </div>
-                  <svg
-                    className="text-right mr-3"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1em"
-                    height="1em"
-                    viewBox="-2 -2 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="m5.72 14.456l1.761-.508l10.603-10.73a.456.456 0 0 0-.003-.64l-.635-.642a.443.443 0 0 0-.632-.003L6.239 12.635zM18.703.664l.635.643c.876.887.884 2.318.016 3.196L8.428 15.561l-3.764 1.084a.9.9 0 0 1-1.11-.623a.9.9 0 0 1-.002-.506l1.095-3.84L15.544.647a2.215 2.215 0 0 1 3.159.016zM7.184 1.817c.496 0 .898.407.898.909a.903.903 0 0 1-.898.909H3.592c-.992 0-1.796.814-1.796 1.817v10.906c0 1.004.804 1.818 1.796 1.818h10.776c.992 0 1.797-.814 1.797-1.818v-3.635c0-.502.402-.909.898-.909s.898.407.898.91v3.634c0 2.008-1.609 3.636-3.593 3.636H3.592C1.608 19.994 0 18.366 0 16.358V5.452c0-2.007 1.608-3.635 3.592-3.635z"
-                    />
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td className="flex justify-between items-center text-1xl">
-                  <div>
-                    <span>Nguyễn Ngọc Trâm Anh | 0359 905 982</span>
-                  </div>
-                  <span className="text-right mr-3">
-                    55/19, đường số 2, phường 3, Gò vấp
-                  </span>
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td className="flex justify-between items-center font-semibold text-lg">
+                    <div>
+                      <span className="">Thông Tin Nhận Hàng</span>
+                    </div>
+                    <svg
+                      className="text-right mr-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="-2 -2 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="m5.72 14.456l1.761-.508l10.603-10.73a.456.456 0 0 0-.003-.64l-.635-.642a.443.443 0 0 0-.632-.003L6.239 12.635zM18.703.664l.635.643c.876.887.884 2.318.016 3.196L8.428 15.561l-3.764 1.084a.9.9 0 0 1-1.11-.623a.9.9 0 0 1-.002-.506l1.095-3.84L15.544.647a2.215 2.215 0 0 1 3.159.016zM7.184 1.817c.496 0 .898.407.898.909a.903.903 0 0 1-.898.909H3.592c-.992 0-1.796.814-1.796 1.817v10.906c0 1.004.804 1.818 1.796 1.818h10.776c.992 0 1.797-.814 1.797-1.818v-3.635c0-.502.402-.909.898-.909s.898.407.898.91v3.634c0 2.008-1.609 3.636-3.593 3.636H3.592C1.608 19.994 0 18.366 0 16.358V5.452c0-2.007 1.608-3.635 3.592-3.635z"
+                      />
+                    </svg>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="flex justify-between items-center text-1xl">
+                    <div>
+                      <span>Nguyễn Ngọc Trâm Anh | 0359 905 982</span>
+                    </div>
+                    <span className="text-right mr-3">
+                      55/19, đường số 2, phường 3, Gò vấp
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
           {/*  */}
           <div className="bg-gray-100 px-5 py-5">
             <table className="w-full h-auto">
-              <tr>
-                <td className="flex justify-between items-center font-semibold text-lg">
-                  <div>
-                    <span className="">Hóa Đơn Điện Tử</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td className="flex justify-between items-center text-1xl py-[5px]">
-                  <div>
-                    <span className="">Tên công ty:</span>
-                  </div>
-                  <span className="text-right mr-3 font-semibold">
-                    Công Ty trách nhiệm hữu hạn Hữu Tiến
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td className="flex justify-between items-center text-1xl pb-2">
-                  <div>
-                    <span className="">Mã số thuế:</span>
-                  </div>
-                  <span className="text-right mr-3 font-semibold">
-                    001122445533
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td className="flex justify-between items-center text-1xl pb-2">
-                  <div>
-                    <span className="">Email:</span>
-                  </div>
-                  <span className="text-right mr-3 font-semibold">
-                    Duybbps31947@fpt.edu.vn
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td className="flex justify-between items-center text-1xl pb-2">
-                  <div>
-                    <span className="">Tỉnh/Thành:</span>
-                  </div>
-                  <span className="text-right mr-3 font-semibold">
-                    Bà Rịa - Vũng Tàu
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td className="flex justify-between items-center text-1xl pb-2">
-                  <div>
-                    <span className="">Quận/Huyện:</span>
-                  </div>
-                  <span className="text-right mr-3 font-semibold">
-                    Châu Đức
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td className="flex justify-between items-center text-1xl pb-2">
-                  <div>
-                    <span className="">Phường/Xã:</span>
-                  </div>
-                  <span className="text-right mr-3 font-semibold">
-                    Xuân Sơn
-                  </span>
-                </td>
-              </tr>
-              <tr>
-                <td className="flex justify-between items-center text-1xl">
-                  <div>
-                    <span className="">Số nhà, đường:</span>
-                  </div>
-                  <span className="text-right mr-3 font-semibold">
-                    tổ 5, thôn Quảng Giao
-                  </span>
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td className="flex justify-between items-center font-semibold text-lg">
+                    <div>
+                      <span className="">Hóa Đơn Điện Tử</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="flex justify-between items-center text-1xl py-[5px]">
+                    <div>
+                      <span className="">Tên công ty:</span>
+                    </div>
+                    <span className="text-right mr-3 font-semibold">
+                      Công Ty trách nhiệm hữu hạn Hữu Tiến
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="flex justify-between items-center text-1xl pb-2">
+                    <div>
+                      <span className="">Mã số thuế:</span>
+                    </div>
+                    <span className="text-right mr-3 font-semibold">
+                      001122445533
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="flex justify-between items-center text-1xl pb-2">
+                    <div>
+                      <span className="">Email:</span>
+                    </div>
+                    <span className="text-right mr-3 font-semibold">
+                      Duybbps31947@fpt.edu.vn
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="flex justify-between items-center text-1xl pb-2">
+                    <div>
+                      <span className="">Tỉnh/Thành:</span>
+                    </div>
+                    <span className="text-right mr-3 font-semibold">
+                      Bà Rịa - Vũng Tàu
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="flex justify-between items-center text-1xl pb-2">
+                    <div>
+                      <span className="">Quận/Huyện:</span>
+                    </div>
+                    <span className="text-right mr-3 font-semibold">
+                      Châu Đức
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="flex justify-between items-center text-1xl pb-2">
+                    <div>
+                      <span className="">Phường/Xã:</span>
+                    </div>
+                    <span className="text-right mr-3 font-semibold">
+                      Xuân Sơn
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="flex justify-between items-center text-1xl">
+                    <div>
+                      <span className="">Số nhà, đường:</span>
+                    </div>
+                    <span className="text-right mr-3 font-semibold">
+                      tổ 5, thôn Quảng Giao
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
           {/*  */}
           <div>
             <div className="flex items-center justify-between bg-white px-10 py-5 mt-10">
               <div className="flex items-center space-x-4">
-                <img
+                <Image
+                  src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/testimonial/testi-shape2.png"
                   className="w-24 h-24"
-                  src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-1/397816338_867533478262497_3322179743631265056_n.jpg?stp=dst-jpg_s200x200&_nc_cat=111&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=WlPc6yY-7q4Q7kNvgFWILl9&_nc_zt=24&_nc_ht=scontent.fsgn2-6.fna&_nc_gid=AKXv1_SzKhi0R-8CeOk2PEA&oh=00_AYC17_oH-31ycD4zVVUW1J5VxLkzzj-FXQhEjV5_Zy4QVw&oe=67166706"
                   alt=""
+                  width={96} // Provide the actual width of the image
+                  height={96} // Provide the actual height of the image
+                  priority
                 />
                 <div>
                   <h3 className="text-lg font-semibold">
@@ -169,10 +177,13 @@ const OrderStatus = () => {
             </div>
             <div className="flex items-center justify-between bg-white px-10 py-5 mt-10">
               <div className="flex items-center space-x-4">
-                <img
+                <Image
+                  src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/testimonial/testi-shape2.png"
                   className="w-24 h-24"
-                  src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-1/397816338_867533478262497_3322179743631265056_n.jpg?stp=dst-jpg_s200x200&_nc_cat=111&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=WlPc6yY-7q4Q7kNvgFWILl9&_nc_zt=24&_nc_ht=scontent.fsgn2-6.fna&_nc_gid=AKXv1_SzKhi0R-8CeOk2PEA&oh=00_AYC17_oH-31ycD4zVVUW1J5VxLkzzj-FXQhEjV5_Zy4QVw&oe=67166706"
                   alt=""
+                  width={96} // Provide the actual width of the image
+                  height={96} // Provide the actual height of the image
+                  priority
                 />
                 <div>
                   <h3 className="text-lg font-semibold">
@@ -220,15 +231,15 @@ const OrderStatus = () => {
                       <g
                         fill="none"
                         stroke="currentColor"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                       >
                         <path
-                          stroke-linecap="round"
+                          strokeLinecap="round"
                           d="M11.029 2.54a2 2 0 0 1 1.942 0l7.515 4.174a1 1 0 0 1 .514.874v8.235a2 2 0 0 1-1.029 1.749l-7 3.888a2 2 0 0 1-1.942 0l-7-3.889A2 2 0 0 1 3 15.824V7.588a1 1 0 0 1 .514-.874z"
                         />
                         <path
-                          stroke-linecap="round"
+                          strokeLinecap="round"
                           d="m7.5 4.5l9 5V13M6 12.328L9 14"
                         />
                         <path d="m3 7l9 5m0 0l9-5m-9 5v9.5" />
@@ -256,9 +267,9 @@ const OrderStatus = () => {
                       <g
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
                         color="currentColor"
                       >
                         <circle cx="17" cy="18" r="2" />

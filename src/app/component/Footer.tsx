@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="mt-4">
@@ -7,38 +7,48 @@ const Footer = () => {
         <div className="h-[191px] bg-gradient-to-t from-[#836FFB] to-[#573CFF] py-8">
           <div className="sm:px-20 px-2 flex h-full justify-center items-center ">
             <div>
-              <img
+              <Image
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/brand/brand1.png"
                 alt="Afterpay"
                 className="mx-10"
+                width={150} // Thay đổi kích thước theo nhu cầu
+                height={50} // Thay đổi kích thước theo nhu cầu
               />
             </div>
             <div>
-              <img
+              <Image
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/brand/brand2.png"
                 alt="Afterpay"
-                className="hidden sm:block mx-10 "
+                className="hidden sm:block mx-10"
+                width={150} // Thay đổi kích thước theo nhu cầu
+                height={50} // Thay đổi kích thước theo nhu cầu
               />
             </div>
             <div>
-              <img
+              <Image
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/brand/brand3.png"
                 alt="Afterpay"
                 className="hidden md:block mx-10"
+                width={150} // Thay đổi kích thước theo nhu cầu
+                height={50} // Thay đổi kích thước theo nhu cầu
               />
             </div>
             <div>
-              <img
+              <Image
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/brand/brand4.png"
                 alt="Afterpay"
                 className="hidden lg:block mx-10"
+                width={150} // Thay đổi kích thước theo nhu cầu
+                height={50} // Thay đổi kích thước theo nhu cầu
               />
             </div>
             <div>
-              <img
+              <Image
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/brand/brand5.png"
                 alt="Afterpay"
                 className="hidden xl:block mx-10"
+                width={150} // Thay đổi kích thước theo nhu cầu
+                height={50} // Thay đổi kích thước theo nhu cầu
               />
             </div>
           </div>
@@ -51,10 +61,12 @@ const Footer = () => {
             {/* Cột 1 */}
             <div className="1col w-1/2 mb-10 ">
               <div className="w-[300px] h-[45px]">
-                <img
+                <Image
                   className="w-[153px] h-[45px]"
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/footer-logo.png"
                   alt=""
+                  width={153}
+                  height={45}
                 />
               </div>
               <p className="mt-2">
@@ -133,48 +145,66 @@ const Footer = () => {
                 {/* Hàng 1 */}
                 <div className="flex gap-2">
                   <div>
-                    <img
+                    <Image
                       src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/footer/footer1.png"
                       alt="Project 1"
-                      className="w-full "
+                      className="w-full"
+                      width={100}
+                      height={100}
+                      priority
                     />
                   </div>
                   <div>
-                    <img
+                    <Image
                       src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/footer/footer2.png"
                       alt="Project 2"
-                      className="w-full "
+                      className="w-full"
+                      width={100}
+                      height={100}
+                      priority
                     />
                   </div>
                   <div>
-                    <img
+                    <Image
                       src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/footer/footer3.png"
                       alt="Project 3"
-                      className="w-full "
+                      className="w-full"
+                      width={100}
+                      height={100}
+                      priority
                     />
                   </div>
                 </div>
                 {/* Hàng 2 */}
                 <div className="flex gap-2">
                   <div>
-                    <img
+                    <Image
                       src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/footer/footer4.png"
                       alt="Project 4"
                       className="w-full "
+                      width={100}
+                      height={100}
+                      priority
                     />
                   </div>
                   <div>
-                    <img
+                    <Image
                       src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/footer/footer5.png"
                       alt="Project 5"
-                      className="w-full "
+                      className="w-full"
+                      width={100}
+                      height={100}
+                      priority
                     />
                   </div>
                   <div className="">
-                    <img
+                    <Image
                       src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/footer/footer6.png"
                       alt="Project 6"
-                      className="w-full "
+                      className="w-full"
+                      width={100}
+                      height={100}
+                      priority
                     />
                   </div>
                 </div>

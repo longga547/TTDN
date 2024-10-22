@@ -1,6 +1,6 @@
 "use client"; // Đánh dấu component này là Client Component
 import React, { useState } from "react";
-
+import Link from 'next/link';
 const Header = () => {
   const [openMenu, setOpenMenu] = useState<string | null>(null); // Trạng thái cho menu đang mở
     const [isMobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false); // Trạng thái cho menu di động
@@ -20,7 +20,7 @@ const Header = () => {
     <header className="md:px-[10px] py-6 lg:px-[150px] flex items-center justify-between bg-white shadow-md">
         {/* Logo or Title */}
         <div className="flex items-center text-[#022C5D] font-medium text-2xl mx-8 md:shrink-0">
-          <a href="/">Logo</a>
+          <Link href="/">Logo</Link>
         </div>
 
         {/* Menu Button for Mobile */}
@@ -37,103 +37,103 @@ const Header = () => {
         </button>
         <nav className="hidden lg:flex  gap-10 mx-auto items-center relative">
           <div className="">
-            <a
+            <Link
               href="/"
               className="text-[#022C5D] font-medium hover:text-blue-600 flex items-center"
             >
               Home
-            </a>
+            </Link>
           </div>
           <div className="relative group">
-            <a
+            <Link
               href="#"
               className="text-[#022C5D] font-medium hover:text-blue-600 flex items-center"
             >
               Courses
-            </a>
+            </Link>
             <div className="absolute w-[250px] p-2 z-20 hidden group-hover:block bg-white shadow-lg  rounded border-t-[2px] border-[#573CFF] transition-opacity duration-300 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
               <div className="flex justify-between px-4 py-2 text-[#022C5D] font-medium hover:text-white hover:bg-[#573CFF]">
-                <a href="/Courses">Courses</a>
+                <Link href="/Courses">Courses</Link>
                 <span>&gt;&gt;</span>
               </div>
               <div className="flex justify-between px-4 py-2 text-[#022C5D] font-medium hover:text-white hover:bg-[#573CFF]">
-                <a href="/CoursesDetail">Courses Detail</a>
+                <Link href="/CoursesDetail">Courses Detail</Link>
                 <span>&gt;&gt;</span>
               </div>
             </div>
           </div>
           <div className="relative group">
-            <a
+            <Link
               href="#"
               className="text-[#022C5D] font-medium hover:text-blue-600 flex items-center"
             >
               Team
-            </a>
+            </Link>
             <div className="absolute w-[250px] p-2 z-20 hidden group-hover:block bg-white shadow-lg  rounded border-t-[2px] border-[#573CFF] transition-opacity duration-300 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
               <div className="flex justify-between px-4 py-2 text-[#022C5D] font-medium hover:text-white hover:bg-[#573CFF]">
-                <a href="/Team">Team</a>
+                <Link href="/Team">Team</Link>
                 <span>&gt;&gt;</span>
               </div>
               <div className="flex justify-between px-4 py-2 text-[#022C5D] font-medium hover:text-white hover:bg-[#573CFF]">
-                <a href="/TeamDetail">Team Detail</a>
+                <Link href="/TeamDetail">Team Detail</Link>
                 <span>&gt;&gt;</span>
               </div>
             </div>
           </div>
           <div className="relative group">
-            <a
+            <Link
               href="#"
               className="text-[#022C5D] font-medium hover:text-blue-600 flex items-center"
             >
               Pages
-            </a>
+            </Link>
             <div className="absolute w-[250px] p-2 z-20 hidden group-hover:block bg-white shadow-lg  rounded border-t-[2px] border-[#573CFF] transition-opacity duration-300 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
               <div className="flex justify-between px-4 py-2 text-[#022C5D] font-medium hover:text-white hover:bg-[#573CFF]">
-                <a href="/Gallery">Gallery</a>
+                <Link href="/Gallery">Gallery</Link>
                 <span>&gt;&gt;</span>
               </div>
               <div className="flex justify-between px-4 py-2 text-[#022C5D] font-medium hover:text-white hover:bg-[#573CFF]">
-                <a href="/GalleryDetail">Gallery Detail</a>
+                <Link href="/GalleryDetail">Gallery Detail</Link>
                 <span>&gt;&gt;</span>
               </div>
               <div className="flex justify-between px-4 py-2 text-[#022C5D] font-medium hover:text-white hover:bg-[#573CFF]">
-                <a href="/FAQ">FAQ</a>
+                <Link href="/FAQ">FAQ</Link>
                 <span>&gt;&gt;</span>
               </div>
               <div className="flex justify-between px-4 py-2 text-[#022C5D] font-medium hover:text-white hover:bg-[#573CFF]">
-                <a href="/ErrorPage">Error Page</a>
+                <Link href="/ErrorPage">Error Page</Link>
                 <span>&gt;&gt;</span>
               </div>
             </div>
           </div>
           <div className="relative group">
-            <a
+            <Link
               href="#"
               className="text-[#022C5D] font-medium hover:text-blue-600 flex items-center"
             >
               Blog
-            </a>
+            </Link>
             <div className="absolute w-[250px] p-2 z-20 hidden group-hover:block bg-white shadow-lg  rounded border-t-[2px] border-[#573CFF] transition-opacity duration-300 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
               <div className="flex justify-between px-4 py-2 text-[#022C5D] font-medium hover:text-white hover:bg-[#573CFF]">
-                <a href="/Blog">Blog</a>
+                <Link href="/Blog">Blog</Link>
                 <span>&gt;&gt;</span>
               </div>
               <div className="flex justify-between px-4 py-2 text-[#022C5D] font-medium hover:text-white hover:bg-[#573CFF]">
-                <a href="/BlogDetail">Blog Detail</a>
+                <Link href="/BlogDetail">Blog Detail</Link>
                 <span>&gt;&gt;</span>
               </div>
             </div>
           </div>
           <div className="">
-            <a
+            <Link
               href="/Contact"
               className="text-[#022C5D] font-medium hover:text-blue-600 flex items-center"
             >
               Contact
-            </a>
+            </Link>
           </div>
           <span>
-            <a href="/Cart">
+            <Link href="/Cart">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20px"
@@ -146,11 +146,11 @@ const Header = () => {
                   d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607L1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4a2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2a1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2"
                 />
               </svg>
-            </a>
+            </Link>
           </span>
           <span>
             <div className="relative group">
-              <a href="/User">
+              <Link href="/User">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20px"
@@ -163,13 +163,13 @@ const Header = () => {
                     d="M230.93 220a8 8 0 0 1-6.93 4H32a8 8 0 0 1-6.92-12c15.23-26.33 38.7-45.21 66.09-54.16a72 72 0 1 1 73.66 0c27.39 8.95 50.86 27.83 66.09 54.16a8 8 0 0 1 .01 8"
                   />
                 </svg>
-              </a>
+              </Link>
               <div className="absolute w-[130px] p-2 z-20 hidden group-hover:block bg-white shadow-lg  rounded border-t-[2px] border-[#573CFF] transition-opacity duration-300 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
                 <div className="flex justify-between px-4 py-2 text-[#022C5D] font-medium hover:text-white hover:bg-[#573CFF]">
-                  <a href="/SignIn">Đăng nhập</a>
+                  <Link href="/SignIn">Đăng nhập</Link>
                 </div>
                 <div className="flex justify-between px-4 py-2 text-[#022C5D] font-medium hover:text-white hover:bg-[#573CFF]">
-                  <a href="/SignUp">Đăng ký</a>
+                  <Link href="/SignUp">Đăng ký</Link>
                 </div>
               </div>
             </div>
@@ -202,14 +202,14 @@ const Header = () => {
             {openMenu === "user" && (
               <div className="px-4 border-[1px] border-stone-200 border-t-0">
                 <p className="py-2 border-b-[1px] border-stone-200 text-[#4026e1]">
-                  <a href="/User">User</a>
+                  <Link href="/User">User</Link>
                 </p>
                 <p className="py-2 border-b-[1px] border-stone-200 text-[#4026e1]">
-                  <a href="/SignIn">Đăng nhập</a>
+                  <Link href="/SignIn">Đăng nhập</Link>
                 </p>
 
                 <p className="py-2 border-b-[1px] border-stone-200 text-[#4026e1]">
-                  <a href="/SignUp">Đăng ký</a>
+                  <Link href="/SignUp">Đăng ký</Link>
                 </p>
               </div>
             )}
@@ -225,11 +225,11 @@ const Header = () => {
             {openMenu === "courses" && (
               <div className="px-4 border-[1px] border-stone-200 border-t-0">
                 <p className="py-2 border-b-[1px] border-stone-200 text-[#4026e1]">
-                  <a href="/Courses">Courses</a>
+                  <Link href="/Courses">Courses</Link>
                 </p>
 
                 <p className="py-2 border-b-[1px] border-stone-200 text-[#4026e1]">
-                  <a href="/CoursesDetail">Courses Detail</a>
+                  <Link href="/CoursesDetail">Courses Detail</Link>
                 </p>
               </div>
             )}
@@ -245,10 +245,10 @@ const Header = () => {
             {openMenu === "team" && (
               <div className="px-4 border-[1px] border-stone-200 border-t-0">
                 <p className="py-2 border-b-[1px] border-stone-200 text-[#4026e1]">
-                  <a href="/Team">Team</a>
+                  <Link href="/Team">Team</Link>
                 </p>
                 <p className="py-2  text-[#4026e1]">
-                  <a href="/TeamDetail">Team Detail</a>
+                  <Link href="/TeamDetail">Team Detail</Link>
                 </p>
               </div>
             )}
@@ -264,15 +264,15 @@ const Header = () => {
             {openMenu === "pages" && (
               <div className="px-4 border-[1px] border-stone-200 border-t-0">
                 <p className="py-2 border-b-[1px] border-stone-200 text-[#4026e1]">
-                  <a href="/Gallery">Gallery</a>
+                  <Link href="/Gallery">Gallery</Link>
                 </p>
                 <p className="py-2 border-b-[1px] border-stone-200 text-[#4026e1]">
-                  <a href="/GalleryDetail">Gallery Detail</a>
+                  <Link href="/GalleryDetail">Gallery Detail</Link>
                 </p>
                 <p className="py-2 border-b-[1px] border-stone-200 text-[#4026e1]">
-                  <a href="/FAQ">FAQ</a>
+                  <Link href="/FAQ">FAQ</Link>
                 </p>
-                <p className="py-2  text-[#4026e1]"><a href="/ErrorPage">Error Page</a></p>
+                <p className="py-2  text-[#4026e1]"><Link href="/ErrorPage">Error Page</Link></p>
               </div>
             )}
 
@@ -287,15 +287,15 @@ const Header = () => {
             {openMenu === "blog" && (
               <div className="px-4 border-[1px] border-stone-200 border-t-0">
                 <p className="py-2 border-b-[1px] border-stone-200 text-[#4026e1]">
-                  <a href="/Blog">Blog</a>
+                  <Link href="/Blog">Blog</Link>
                 </p>
-                <p className="py-2  text-[#4026e1]"><a href="/BlogDetail">Blog Detail</a></p>
+                <p className="py-2  text-[#4026e1]"><Link href="/BlogDetail">Blog Detail</Link></p>
               </div>
             )}
 
             {/* Contact Menu */}
             <div className="w-full py-3 px-4 my-2 bg-[#4026e1] text-white font-medium ">
-              <p><a href="/Contact">Contact</a></p>
+              <p><Link href="/Contact">Contact</Link></p>
             </div>
           </div>
         )}

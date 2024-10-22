@@ -1,12 +1,25 @@
 import React from "react";
+import Image from "next/image";
 
 const Team = () => {
+  const bgImageUrl =
+    "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/bretcome-bg.jpg";
+  const anh1 =
+    "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team1.png";
+  const anh2 =
+    "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team2.png";
+  const anh3 =
+    "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team3.png";
+  const anh4 =
+    "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team4.png";
   return (
     <div className="bg-gray-100">
       <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
-        <img
-          src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/bretcome-bg.jpg"
+        <Image
+          src={bgImageUrl}
           alt="Image"
+          width={1920}
+          height={400}
           className="w-full h-full object-cover"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold">
@@ -46,10 +59,12 @@ const Team = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Card 1 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group">
-              <img
+              <Image
                 alt="Portrait of Earle Goodman"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team1.png"
+                src={anh1}
+                width={2000}
+                height={1080}
               />
               <div className="p-6">
                 <h2 className="text-xl font-bold text-center text-black transition-colors duration-300 group-hover:text-blue-500">
@@ -128,10 +143,12 @@ const Team = () => {
             </div>
             {/* Card 2 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group">
-              <img
-                alt="Portrait of Sarah Taylor"
+              <Image
+                alt="Portrait of Earle Goodman"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team2.png"
+                src={anh2}
+                width={1920}
+                height={400}
               />
               <div className="p-6">
                 <h2 className="text-xl font-bold text-center text-black transition-colors duration-300 group-hover:text-blue-500">
@@ -211,10 +228,12 @@ const Team = () => {
 
             {/* Card 3 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group">
-              <img
-                alt="Portrait of Hunter Hunter"
+              <Image
+                alt="Portrait of Earle Goodman"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team3.png"
+                src={anh3}
+                width={1920}
+                height={400}
               />
               <div className="p-6">
                 <h2 className="text-xl font-bold text-center text-black transition-colors duration-300 group-hover:text-blue-500">
@@ -293,10 +312,12 @@ const Team = () => {
             </div>
             {/* Card 4 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group">
-              <img
-                alt="Portrait of Norris Weeks"
+              <Image
+                alt="Portrait of Earle Goodman"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team4.png"
+                src={anh4}
+                width={2000}
+                height={600}
               />
               <div className="p-6">
                 <h2 className="text-xl font-bold text-center text-black transition-colors duration-300 group-hover:text-blue-500">
@@ -376,14 +397,16 @@ const Team = () => {
           </div>
         </div>
         {/* 4 Card Thông Tin */}
-        <div className="container mx-auto px-4 mt-10">
+        <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Card 1 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group">
-              <img
+              <Image
                 alt="Portrait of Earle Goodman"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team1.png"
+                src={anh1}
+                width={2000}
+                height={1080}
               />
               <div className="p-6">
                 <h2 className="text-xl font-bold text-center text-black transition-colors duration-300 group-hover:text-blue-500">
@@ -462,10 +485,12 @@ const Team = () => {
             </div>
             {/* Card 2 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group">
-              <img
-                alt="Portrait of Sarah Taylor"
+              <Image
+                alt="Portrait of Earle Goodman"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team2.png"
+                src={anh2}
+                width={1920}
+                height={400}
               />
               <div className="p-6">
                 <h2 className="text-xl font-bold text-center text-black transition-colors duration-300 group-hover:text-blue-500">
@@ -545,10 +570,12 @@ const Team = () => {
 
             {/* Card 3 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group">
-              <img
-                alt="Portrait of Hunter Hunter"
+              <Image
+                alt="Portrait of Earle Goodman"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team3.png"
+                src={anh3}
+                width={1920}
+                height={400}
               />
               <div className="p-6">
                 <h2 className="text-xl font-bold text-center text-black transition-colors duration-300 group-hover:text-blue-500">
@@ -627,10 +654,12 @@ const Team = () => {
             </div>
             {/* Card 4 */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden group">
-              <img
-                alt="Portrait of Norris Weeks"
+              <Image
+                alt="Portrait of Earle Goodman"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team4.png"
+                src={anh4}
+                width={2000}
+                height={600}
               />
               <div className="p-6">
                 <h2 className="text-xl font-bold text-center text-black transition-colors duration-300 group-hover:text-blue-500">

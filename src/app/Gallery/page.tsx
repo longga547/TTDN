@@ -1,13 +1,15 @@
 import React from "react";
+import Image from "next/image";
 
 const Gallery = () => {
   return (
     <div>
       <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
-        <img
+        <Image
           src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/bretcome-bg.jpg"
           alt="Image"
-          className="w-full h-full object-cover"
+          layout="fill"
+          objectFit="cover"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold">
           Gallery
@@ -25,38 +27,47 @@ const Gallery = () => {
             Moderior Latest Gallery
           </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 relative">
-          <div className="group relative sm:col-span-2">
-            <img
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          <div className="sm:col-span-2">
+            <Image
               src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/project/project1.png"
               alt="Gallery Image 1"
-              className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg group-hover:translate-x-5 transition-transform duration-500 ease-in-out"
-            />
-            <img
-              src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/project/project1.png"
-              alt="Gallery Image 2"
-              className="absolute top-0 left-0 w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg opacity-0 group-hover:opacity-100 group-hover:translate-x-5 transition-transform duration-500 ease-in-out"
+              layout="responsive"
+              width={700}
+              height={500}
+              className="rounded-lg"
             />
           </div>
           <div className="sm:col-span-2">
-            <img
+            <Image
               src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/project/project2.png"
-              alt="Gallery Image 3"
-              className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg"
+              alt="Gallery Image 2"
+              layout="responsive"
+              width={700}
+              height={500}
+              className="rounded-lg"
             />
           </div>
-          <div className="sm:col-span-3">
-            <img
+          <div className="sm:col-span-3 h-[250px] md:h-[400px] relative">
+            {" "}
+            {/* Chiều cao cho ảnh 4 */}
+            <Image
               src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/project/project3.png"
               alt="Gallery Image 4"
-              className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
             />
           </div>
-          <div className="sm:col-span-1">
-            <img
+          <div className="sm:col-span-1 h-[250px] md:h-[400px] relative">
+            {" "}
+            {/* Chiều cao cho ảnh 5 */}
+            <Image
               src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/project/project4.png"
               alt="Gallery Image 5"
-              className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
             />
           </div>
         </div>

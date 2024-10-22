@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Blog = () => {
   interface BlogPost {
@@ -58,19 +59,21 @@ const Blog = () => {
   return (
     <div>
       <div className="w-full relative">
-      <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
-        <img
-          src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/bretcome-bg.jpg"
-          alt="Image"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold">
-          Blog
+        <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
+          <Image
+            src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/bretcome-bg.jpg"
+            alt="Image"
+            fill
+            className="object-cover w-full h-full"
+          />
+
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold">
+            Blog
+          </div>
+          <button className="absolute bottom-0 md:left-[100px] left-[50px]  bg-[#4026E1] hover:bg-[#6854e9] text-2xl text-white font-medium px-10 py-6 rounded-t-lg">
+            Home/Blog
+          </button>
         </div>
-        <button className="absolute bottom-0 md:left-[100px] left-[50px]  bg-[#4026E1] hover:bg-[#6854e9] text-2xl text-white font-medium px-10 py-6 rounded-t-lg">
-          Home/Blog
-        </button>
-      </div>
       </div>
 
       <div className="container mx-auto mb-16 px-4 md:px-10">
@@ -86,23 +89,25 @@ const Blog = () => {
                 key={post.id}
               >
                 <div className="flex flex-col md:flex-row">
-                  {" "}
-                  {/* Sử dụng flex-col cho màn hình nhỏ */}
                   <div className="w-full h-auto md:w-1/2 rounded-t-lg md:rounded-l-lg overflow-hidden">
-                    <img
+                    <Image
                       src={post.imageUrl}
                       alt={post.title}
+                      width={700}
+                      height={500}
                       className="object-cover w-full h-[200px] md:h-full transition-transform duration-300 ease-out group-hover:scale-105"
                     />
                   </div>
                   <div className="p-4 w-full md:w-1/2">
                     <div className="flex items-center mb-2">
-                      <img
+                      <Image
                         src={post.smallImageUrl}
                         alt={`${post.author} thumbnail`}
-                        className="w-12 h-12 rounded-full mr-3 object-cover"
+                        width={48}
+                        height={48}
+                        className="rounded-full object-cover"
                       />
-                      <p className="text-gray-500">
+                      <p className="text-gray-500 ml-3">
                         By- <br />
                         {post.author}
                       </p>
@@ -117,10 +122,9 @@ const Blog = () => {
                       </div>
                       <a
                         href="#"
-                        className="relative inline-block bg-purple-500 text-white py-2 px-4 rounded-lg overflow-hidden transition-all duration-300 hover:bg-gradient-to-l from-purple-500 to-red-500"
+                        className="relative inline-block bg-[#4026E1] text-white py-2 px-4 rounded-lg overflow-hidden transition-all duration-300 hover:bg-gradient-to-l from-purple-500 to-red-500 "
                       >
-                        <span className="relative z-10">More</span>
-                        <span className="absolute inset-0 bg-purple-500"></span>
+                        <span className="relative z-10 ">More</span>
                       </a>
                     </div>
                   </div>

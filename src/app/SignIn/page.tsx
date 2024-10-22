@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import anh from "./hinchuan.jpg";
+import Link from "next/link";
+
 const SignIn = () => {
   return (
     <div className="min-h-screen flex justify-center items-center p-5 md:p-10">
@@ -9,9 +11,9 @@ const SignIn = () => {
           <Image
             src={anh}
             alt="Image"
-            className="rounded-3xl w-full h-auto object-cover"
-            width={600}
-            height={400}
+            className="rounded-3xl object-cover" // Removed width/height from className
+            width={600} // Width in pixels
+            height={400} // Height in pixels
             priority
           />
         </div>
@@ -40,14 +42,14 @@ const SignIn = () => {
               Submit
             </button>
             <br />
-            <a href="/SignUp" className="text-center block mt-4">
+            <Link href="/SignUp" className="text-center block mt-4">
               Bạn chưa có tài khoản?{" "}
               <span style={{ color: "#FFD700" }}>Đăng ký ngay</span>
-              <br />
-              <a href="/ForgetPass">
-                <span style={{ color: "#FFD700" }}>Quên Mật khẩu</span>
-              </a>
-            </a>
+            </Link>
+            <br />
+            <Link href="/ForgetPass">
+              <span className="flex justify-center" style={{ color: "#FFD700" }}>Quên Mật khẩu</span>
+            </Link>
           </form>
         </div>
       </div>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div>
@@ -23,25 +25,33 @@ export default function Home() {
               {/* box view */}
               <div className="hidden lg:block bg-white rounded-md p-6 shadow-lg z-20 ">
                 <div className="flex space-x-1">
-                  <img
+                  <Image
                     src="https://via.placeholder.com/40"
                     alt="Instructor 1"
                     className="rounded-full"
+                    width={40}
+                    height={40}
                   />
-                  <img
+                  <Image
                     src="https://via.placeholder.com/40"
                     alt="Instructor 2"
                     className="rounded-full"
+                    width={40}
+                    height={40}
                   />
-                  <img
+                  <Image
                     src="https://via.placeholder.com/40"
                     alt="Instructor 3"
                     className="rounded-full"
+                    width={40}
+                    height={40}
                   />
-                  <img
+                  <Image
                     src="https://via.placeholder.com/40"
                     alt="Instructor 4"
                     className="rounded-full"
+                    width={40}
+                    height={40}
                   />
                 </div>
                 <div className="flex mt-5 items-center">
@@ -65,11 +75,14 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-1/3 h-full overflow-hidden z-0 ">
-            <img
+          <div className="w-1/3 h-full overflow-hidden z-0">
+            <Image
               src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/slider/slider-thumb.png"
               alt=""
-              className="absolute h-full object-cover right-0 hidden md:block "
+              className="absolute h-full object-cover right-0 hidden md:block"
+              width={700} // Replace with actual width
+              height={300} // Replace with actual height
+              priority
             />
           </div>
         </div>
@@ -92,12 +105,15 @@ export default function Home() {
           {/* image */}
           <div className="flex gap-2 sm:gap-4 md:gap-10 justify-center mt-10 md:px-[100px] px-10">
             {/* ảnh 1 */}
-            <div className="flex flex-col ">
+            <div className="flex flex-col">
               <div className="relative md:w-[284px] md:h-[384px] sm:w-[200px] sm:h-[300px] w-[180px] h-[280px] overflow-hidden">
-                <img
+                <Image
                   className="w-full transition-transform duration-300 transform hover:scale-115"
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/catagories/catagories3.png"
                   alt=""
+                  width={284} // Set appropriate width
+                  height={384} // Set appropriate height
+                  priority
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-30 opacity-0 transition-opacity duration-300 hover:opacity-100">
                   <span className="text-xl text-white font-semibold">
@@ -105,17 +121,21 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <span className="mt-6 text-2xl  text-center font-semibold">
+              <span className="mt-6 text-2xl text-center font-semibold">
                 Graphic Design
               </span>
             </div>
+
             {/* ảnh 2 */}
             <div className="flex flex-col items-center">
               <div className="relative md:w-[284px] md:h-[384px] sm:w-[200px] sm:h-[300px] w-[180px] h-[280px] overflow-hidden">
-                <img
+                <Image
                   className="w-full transition-transform duration-300 transform hover:scale-115"
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/catagories/catagories4.png"
                   alt=""
+                  width={284}
+                  height={384}
+                  priority
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-30 opacity-0 transition-opacity duration-300 hover:opacity-100">
                   <span className="text-xl text-white font-semibold">
@@ -123,18 +143,22 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <span className="mt-6 text-2xl  text-center font-semibold">
+              <span className="mt-6 text-2xl text-center font-semibold">
                 Art & Humanities
               </span>
             </div>
+
             {/* ảnh 3 */}
             <div className="hidden lg:block">
-              <div className="flex flex-col items-center ">
+              <div className="flex flex-col items-center">
                 <div className="relative w-[284px] h-[384px] overflow-hidden">
-                  <img
+                  <Image
                     className="w-full transition-transform duration-300 transform hover:scale-115"
                     src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/catagories/catagories5.png"
                     alt=""
+                    width={284}
+                    height={384}
+                    priority
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-30 opacity-0 transition-opacity duration-300 hover:opacity-100">
                     <span className="text-xl text-white font-semibold">
@@ -142,19 +166,23 @@ export default function Home() {
                     </span>
                   </div>
                 </div>
-                <span className="mt-6 text-2xl  text-center font-semibold">
+                <span className="mt-6 text-2xl text-center font-semibold">
                   Mobile Application
                 </span>
               </div>
             </div>
+
             {/* ảnh 4 */}
             <div className="hidden xl:block">
               <div className="flex flex-col items-center">
                 <div className="relative w-[284px] h-[384px] overflow-hidden">
-                  <img
+                  <Image
                     className="w-full transition-transform duration-300 transform hover:scale-115"
                     src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/catagories/catagories6.png"
                     alt=""
+                    width={284}
+                    height={384}
+                    priority
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-30 opacity-0 transition-opacity duration-300 hover:opacity-100">
                     <span className="text-xl text-white font-semibold">
@@ -162,7 +190,7 @@ export default function Home() {
                     </span>
                   </div>
                 </div>
-                <span className="mt-6 text-2xl  text-center font-semibold">
+                <span className="mt-6 text-2xl text-center font-semibold">
                   Development
                 </span>
               </div>
@@ -195,14 +223,17 @@ export default function Home() {
           </div>
           {/* 6 box */}
           <div className="flex-col mt-8 space-y-8">
-            <div className="row11 grid xl:grid-cols-3 lg:grid-cols-2  gap-8 ">
+            <div className="row11 grid xl:grid-cols-3 lg:grid-cols-2 gap-8">
               {/* box1 */}
-              <div className=" rounded overflow-hidden shadow-lg bg-white">
-                <div className="relative ">
-                  <img
+              <div className="rounded overflow-hidden shadow-lg bg-white">
+                <div className="relative">
+                  <Image
                     className="w-full h-[322px] object-cover"
                     src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course1.png"
                     alt="Course"
+                    width={400} // Set appropriate width
+                    height={322} // Set appropriate height
+                    priority
                   />
                   <div className="absolute flex justify-between pl-[30px] bottom-0 left-0 right-0 bg-gradient-to-t from-[#203f50] to-transparent p-4">
                     <h2 className="text-white font-semibold">Kevin Martin</h2>
@@ -220,20 +251,24 @@ export default function Home() {
                 <div className="px-6 py-2 font-bold text-xl">
                   Ims The Complete Salesforce Classic Certification
                 </div>
-                <div className="w-[90%] flex justify-between mx-auto py-3  mt-2 border-t-[1px] border-stone-200">
+                <div className="w-[90%] flex justify-between mx-auto py-3 mt-2 border-t-[1px] border-stone-200">
                   <p className="text-lg font-medium">$45.00</p>
                   <p className="text-lg font-medium text-stone-00">
                     Add to cart
                   </p>
                 </div>
               </div>
+
               {/* box2 */}
               <div className="rounded overflow-hidden shadow-lg bg-white">
-                <div className="relative ">
-                  <img
+                <div className="relative">
+                  <Image
                     className="w-full h-[322px] object-cover"
                     src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course2.png"
                     alt="Course"
+                    width={400}
+                    height={322}
+                    priority
                   />
                   <div className="absolute flex justify-between pl-[30px] bottom-0 left-0 right-0 bg-gradient-to-t from-[#203f50] to-transparent p-4">
                     <h2 className="text-white font-semibold">Kevin Martin</h2>
@@ -251,20 +286,24 @@ export default function Home() {
                 <div className="px-6 py-2 font-bold text-xl">
                   Ims The Complete Salesforce Classic Certification
                 </div>
-                <div className="w-[90%] flex justify-between mx-auto py-3  mt-2 border-t-[1px] border-stone-200">
+                <div className="w-[90%] flex justify-between mx-auto py-3 mt-2 border-t-[1px] border-stone-200">
                   <p className="text-lg font-medium">$45.00</p>
                   <p className="text-lg font-medium text-stone-00">
                     Add to cart
                   </p>
                 </div>
               </div>
+
               {/* box3 */}
               <div className="rounded overflow-hidden shadow-lg bg-white">
-                <div className="relative ">
-                  <img
+                <div className="relative">
+                  <Image
                     className="w-full h-[322px] object-cover"
                     src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course3.png"
                     alt="Course"
+                    width={400}
+                    height={322}
+                    priority
                   />
                   <div className="absolute flex justify-between pl-[30px] bottom-0 left-0 right-0 bg-gradient-to-t from-[#203f50] to-transparent p-4">
                     <h2 className="text-white font-semibold">Kevin Martin</h2>
@@ -282,20 +321,24 @@ export default function Home() {
                 <div className="px-6 py-2 font-bold text-xl">
                   Ims The Complete Salesforce Classic Certification
                 </div>
-                <div className="w-[90%] flex justify-between mx-auto py-3  mt-2 border-t-[1px] border-stone-200">
+                <div className="w-[90%] flex justify-between mx-auto py-3 mt-2 border-t-[1px] border-stone-200">
                   <p className="text-lg font-medium">$45.00</p>
                   <p className="text-lg font-medium text-stone-00">
                     Add to cart
                   </p>
                 </div>
               </div>
+
               {/* box4 */}
               <div className="rounded overflow-hidden shadow-lg bg-white">
-                <div className="relative ">
-                  <img
+                <div className="relative">
+                  <Image
                     className="w-full h-[322px] object-cover"
                     src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course4.png"
                     alt="Course"
+                    width={400}
+                    height={322}
+                    priority
                   />
                   <div className="absolute flex justify-between pl-[30px] bottom-0 left-0 right-0 bg-gradient-to-t from-[#203f50] to-transparent p-4">
                     <h2 className="text-white font-semibold">Kevin Martin</h2>
@@ -313,20 +356,24 @@ export default function Home() {
                 <div className="px-6 py-2 font-bold text-xl">
                   Ims The Complete Salesforce Classic Certification
                 </div>
-                <div className="w-[90%] flex justify-between mx-auto py-3  mt-2 border-t-[1px] border-stone-200">
+                <div className="w-[90%] flex justify-between mx-auto py-3 mt-2 border-t-[1px] border-stone-200">
                   <p className="text-lg font-medium">$45.00</p>
                   <p className="text-lg font-medium text-stone-00">
                     Add to cart
                   </p>
                 </div>
               </div>
+
               {/* box5 */}
               <div className="rounded overflow-hidden shadow-lg bg-white">
-                <div className="relative ">
-                  <img
+                <div className="relative">
+                  <Image
                     className="w-full h-[322px] object-cover"
                     src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course5.png"
                     alt="Course"
+                    width={400}
+                    height={322}
+                    priority
                   />
                   <div className="absolute flex justify-between pl-[30px] bottom-0 left-0 right-0 bg-gradient-to-t from-[#203f50] to-transparent p-4">
                     <h2 className="text-white font-semibold">Kevin Martin</h2>
@@ -344,20 +391,24 @@ export default function Home() {
                 <div className="px-6 py-2 font-bold text-xl">
                   Ims The Complete Salesforce Classic Certification
                 </div>
-                <div className="w-[90%] flex justify-between mx-auto py-3  mt-2 border-t-[1px] border-stone-200">
+                <div className="w-[90%] flex justify-between mx-auto py-3 mt-2 border-t-[1px] border-stone-200">
                   <p className="text-lg font-medium">$45.00</p>
                   <p className="text-lg font-medium text-stone-00">
                     Add to cart
                   </p>
                 </div>
               </div>
+
               {/* box6 */}
               <div className="rounded overflow-hidden shadow-lg bg-white">
-                <div className="relative ">
-                  <img
+                <div className="relative">
+                  <Image
                     className="w-full h-[322px] object-cover"
                     src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course6.png"
                     alt="Course"
+                    width={400}
+                    height={322}
+                    priority
                   />
                   <div className="absolute flex justify-between pl-[30px] bottom-0 left-0 right-0 bg-gradient-to-t from-[#203f50] to-transparent p-4">
                     <h2 className="text-white font-semibold">Kevin Martin</h2>
@@ -375,7 +426,7 @@ export default function Home() {
                 <div className="px-6 py-2 font-bold text-xl">
                   Ims The Complete Salesforce Classic Certification
                 </div>
-                <div className="w-[90%] flex justify-between mx-auto py-3  mt-2 border-t-[1px] border-stone-200">
+                <div className="w-[90%] flex justify-between mx-auto py-3 mt-2 border-t-[1px] border-stone-200">
                   <p className="text-lg font-medium">$45.00</p>
                   <p className="text-lg font-medium text-stone-00">
                     Add to cart
@@ -466,10 +517,13 @@ export default function Home() {
 
           <div className="relative w-1/2 hidden lg:block">
             <div className="img w-full h-full">
-              <img
+              <Image
                 className="w-full h-full object-cover"
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/help-thumb.png"
                 alt="Help"
+                width={500} // Set the appropriate width
+                height={500} // Set the appropriate height
+                priority
               />
             </div>
             <div className="absolute flex justify-center items-center w-[350px] h-[200px] top-[150px] bg-gradient-to-t from-[#836FFB] to-[#573CFF] hover:bg-[#002935] text-white p-4">
@@ -498,12 +552,15 @@ export default function Home() {
           <div className="4box flex-col space-y-4 ">
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
               {/* box1 */}
-              <div className="flex bg-white p-12  gap-8  shadow-lg">
+              <div className="flex bg-white p-12 gap-8 shadow-lg">
                 <div>
-                  <img
+                  <Image
                     src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/choose1.png"
                     alt=""
-                    className="duration-300 hover:scale-110 hover:brightness-110 "
+                    className="duration-300 hover:scale-110 hover:brightness-110"
+                    width={200}
+                    height={150}
+                    priority
                   />
                 </div>
                 <div>
@@ -521,12 +578,15 @@ export default function Home() {
                 </div>
               </div>
               {/* box2 */}
-              <div className="flex bg-white p-12  gap-8  shadow-lg">
+              <div className="flex bg-white p-12 gap-8 shadow-lg">
                 <div>
-                  <img
+                  <Image
                     src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/choose1.png"
                     alt=""
-                    className="duration-300 hover:scale-110 hover:brightness-110 "
+                    className="duration-300 hover:scale-110 hover:brightness-110"
+                    width={200}
+                    height={150}
+                    priority
                   />
                 </div>
                 <div>
@@ -544,12 +604,15 @@ export default function Home() {
                 </div>
               </div>
               {/* box3 */}
-              <div className="flex bg-white p-12  gap-8  shadow-lg">
+              <div className="flex bg-white p-12 gap-8 shadow-lg">
                 <div>
-                  <img
+                  <Image
                     src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/choose1.png"
                     alt=""
-                    className="duration-300 hover:scale-110 hover:brightness-110 "
+                    className="duration-300 hover:scale-110 hover:brightness-110"
+                    width={200}
+                    height={150}
+                    priority
                   />
                 </div>
                 <div>
@@ -567,12 +630,15 @@ export default function Home() {
                 </div>
               </div>
               {/* box4 */}
-              <div className="flex bg-white p-12  gap-8  shadow-lg">
+              <div className="flex bg-white p-12 gap-8 shadow-lg">
                 <div>
-                  <img
+                  <Image
                     src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/choose1.png"
                     alt=""
-                    className="duration-300 hover:scale-110 hover:brightness-110 "
+                    className="duration-300 hover:scale-110 hover:brightness-110"
+                    width={200}
+                    height={150}
+                    priority
                   />
                 </div>
                 <div>
@@ -606,10 +672,13 @@ export default function Home() {
             {/* box1 */}
             <div className="bg-white rounded-md space-y-4 pb-8 group">
               <div className="overflow-hidden">
-                <img
-                  className="w-full duration-300 group-hover:scale-110 "
+                <Image
+                  className="w-full duration-300 group-hover:scale-110"
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team1.png"
                   alt=""
+                  width={300} // Set appropriate width
+                  height={300} // Set appropriate height
+                  priority
                 />
               </div>
               <div className="space-y-4">
@@ -699,10 +768,13 @@ export default function Home() {
             {/* box2 */}
             <div className="bg-white rounded-md space-y-4 pb-8 group">
               <div className="overflow-hidden">
-                <img
-                  className="w-full duration-300 group-hover:scale-110 "
+                <Image
+                  className="w-full duration-300 group-hover:scale-110"
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team3.png"
                   alt=""
+                  width={300} // Set appropriate width
+                  height={300} // Set appropriate height
+                  priority
                 />
               </div>
               <div className="space-y-4">
@@ -792,10 +864,13 @@ export default function Home() {
             {/* box3 */}
             <div className="bg-white rounded-md space-y-4 pb-8 group">
               <div className="overflow-hidden">
-                <img
-                  className="w-full duration-300 group-hover:scale-110 "
+                <Image
+                  className="w-full duration-300 group-hover:scale-110"
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team2.png"
                   alt=""
+                  width={300} // Set appropriate width
+                  height={300} // Set appropriate height
+                  priority
                 />
               </div>
               <div className="space-y-4">
@@ -885,10 +960,13 @@ export default function Home() {
             {/* box4 */}
             <div className="bg-white rounded-md space-y-4 pb-8 group">
               <div className="overflow-hidden">
-                <img
-                  className="w-full duration-300 group-hover:scale-110 "
+                <Image
+                  className="w-full duration-300 group-hover:scale-110"
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team4.png"
                   alt=""
+                  width={300} // Set appropriate width
+                  height={300} // Set appropriate height
+                  priority
                 />
               </div>
               <div className="space-y-4">
@@ -980,10 +1058,13 @@ export default function Home() {
           <div className="">
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 ">
               <div className="relative overflow-hidden">
-                <img
+                <Image
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/instractor-bg1.png"
                   alt=""
                   className="w-full"
+                  width={300} // Set appropriate width
+                  height={200} // Set appropriate height
+                  priority
                 />
                 <div className="absolute inset-0 flex flex-col justify-center items-start p-6 w-2/3">
                   <h2 className="text-xl md:text-2xl font-semibold mb-2">
@@ -999,10 +1080,13 @@ export default function Home() {
                 </div>
               </div>
               <div className="relative overflow-hidden ">
-                <img
+                <Image
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/instractor-bg2.png"
                   alt=""
                   className="w-full scale-110"
+                  width={300} // Set appropriate width
+                  height={200} // Set appropriate height
+                  priority
                 />
                 <div className="absolute inset-0 flex flex-col justify-center items-start p-6 w-2/3">
                   <h2 className="text-xl md:text-2xl font-semibold mb-2">
@@ -1037,10 +1121,12 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 px-4 md:px-16">
             <div className="col image-container">
-              <img
+              <Image
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/video1.png"
                 alt="anh1"
                 className="w-full h-auto shadow-md"
+                width={500} // Set a width based on your design
+                height={300} // Set a height based on your design
               />
               <span className="price-tag">$155</span>
               <div className="play-button">
@@ -1054,10 +1140,12 @@ export default function Home() {
               </div>
             </div>
             <div className="col image-container">
-              <img
+              <Image
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/video2.png"
                 alt="anh2"
                 className="w-full h-auto shadow-md"
+                width={500} // Set a width based on your design
+                height={300} // Set a height based on your design
               />
               <span className="price-tag">$125</span>
               <div className="play-button">
@@ -1071,10 +1159,12 @@ export default function Home() {
               </div>
             </div>
             <div className="col image-container">
-              <img
+              <Image
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/video3.png"
                 alt="anh3"
                 className="w-full h-auto shadow-md"
+                width={500} // Set a width based on your design
+                height={300} // Set a height based on your design
               />
               <span className="price-tag">$227</span>
               <div className="play-button">
@@ -1088,10 +1178,12 @@ export default function Home() {
               </div>
             </div>
             <div className="col image-container">
-              <img
+              <Image
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/video4.png"
                 alt="anh4"
                 className="w-full h-auto shadow-md"
+                width={500} // Set a width based on your design
+                height={300} // Set a height based on your design
               />
               <span className="price-tag">$222</span>
               <div className="play-button">
@@ -1223,10 +1315,12 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 mb-10">
           <div className="col">
             <div className="relative box-1">
-              <img
+              <Image
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/testimonial/testi1.png"
                 alt="anh1"
                 className="w-full h-auto"
+                width={500} // Set a width based on your design
+                height={300} // Set a height based on your design
               />
               <div className="absolute bottom-0 left-0 text-white p-4">
                 <p className="font-semibold">Earle Goodman</p>
@@ -1240,10 +1334,12 @@ export default function Home() {
             </div>
             <div className="box-2 p-6 bg-white rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <img
+                <Image
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/testimonial/testi-shape1.png"
                   alt="anh1"
                   className="w-16 h-16 rounded-full mr-4"
+                  width={64} // 16 * 4 (for Tailwind's default rem size)
+                  height={64} // 16 * 4 (for Tailwind's default rem size)
                 />
                 <div>
                   <p className="font-semibold text-lg">Jacob Jones</p>
@@ -1285,10 +1381,12 @@ export default function Home() {
           <div className="col">
             <div className="box-2 p-6 bg-white rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <img
+                <Image
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/testimonial/testi-shape2.png"
                   alt="anh2"
                   className="w-16 h-16 rounded-full mr-4"
+                  width={64} // 16 * 4 (for Tailwind's default rem size)
+                  height={64} // 16 * 4 (for Tailwind's default rem size)
                 />
                 <div>
                   <p className="font-semibold text-lg">Jacob Jones</p>
@@ -1325,10 +1423,12 @@ export default function Home() {
               </p>
             </div>
             <div className="relative box-1">
-              <img
+              <Image
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/testimonial/testi1.png"
                 alt="anh1"
                 className="w-full h-auto"
+                width={500} // Set a width based on your design
+                height={300} // Set a height based on your design
               />
               <div className="absolute bottom-0 left-0 text-white p-4">
                 <p className="font-semibold">Lindsay Lohan</p>
@@ -1344,10 +1444,12 @@ export default function Home() {
 
           <div className="col">
             <div className="relative box-1">
-              <img
+              <Image
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/testimonial/testi2.png"
                 alt="anh3"
                 className="w-full h-auto"
+                width={500} // Set a width based on your design
+                height={300} // Set a height based on your design
               />
               <div className="absolute bottom-0 left-0 text-white p-4">
                 <p className="font-semibold">Antwan Perkins</p>
@@ -1361,10 +1463,12 @@ export default function Home() {
             </div>
             <div className="box-2 p-6 bg-white rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <img
+                <Image
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/testimonial/testi-shape3.png"
                   alt="anh4"
                   className="w-16 h-16 rounded-full mr-4"
+                  width={64} // 16 * 4 (for Tailwind's default rem size)
+                  height={64} // 16 * 4 (for Tailwind's default rem size)
                 />
                 <div>
                   <p className="font-semibold text-lg">Mohammed Shami</p>
@@ -1417,18 +1521,22 @@ export default function Home() {
           {/* box1 */}
           <div className="shadow-xl px-[10px]">
             <div>
-              <img
+              <Image
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/blog1.png"
                 alt="anh1"
                 className="w-full h-auto"
+                width={500} // Set a width based on your design
+                height={300} // Set a height based on your design
               />
             </div>
             <div className="p-6">
               <div className="flex items-center">
-                <img
+                <Image
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/shape1.png"
                   alt="anh1"
                   className="w-12 h-12 rounded-full mr-2"
+                  width={48} // 12 * 4 (for Tailwind's default rem size)
+                  height={48} // 12 * 4 (for Tailwind's default rem size)
                 />
                 <p className="text-gray-500 font-normal">
                   By-
@@ -1484,18 +1592,22 @@ export default function Home() {
           {/* box2 */}
           <div className="shadow-xl px-[10px]">
             <div>
-              <img
+              <Image
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/blog2.png"
                 alt="anh1"
                 className="w-full h-auto"
+                width={500} // Set a width based on your design
+                height={300} // Set a height based on your design
               />
             </div>
             <div className="p-6">
               <div className="flex items-center">
-                <img
+                <Image
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/shape2.png"
                   alt="anh1"
                   className="w-12 h-12 rounded-full mr-2"
+                  width={48} // 12 * 4 (for Tailwind's default rem size)
+                  height={48} // 12 * 4 (for Tailwind's default rem size)
                 />
                 <p className="text-gray-500 font-normal">
                   By-
