@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -18,4 +18,136 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+
+.image-container {
+  position: relative;
+  text-align: center; /* Căn giữa chữ */
+  overflow: hidden; /* Ẩn phần thừa */
+  transition: transform 0.3s ease; /* Hiệu ứng chuyển tiếp */
+}
+
+.image-container:hover {
+  transform: scale(1.05); /* Phóng to hình ảnh khi hover */
+}
+
+.price-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #4f46e5; /* Màu xanh tím */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 9999px; /* Bo tròn */
+  font-size: 1rem; /* Kích thước chữ */
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent; /* Nền trong suốt */
+  border-radius: 50%;
+  border: 2px solid white; /* Viền trắng mỏng */
+  width: 60px; /* Đường kính nút */
+  height: 60px; /* Đường kính nút */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.play-button::before {
+  content: "";
+  position: absolute;
+  width: 80px; /* Đường kính vòng ngoài */
+  height: 80px; /* Đường kính vòng ngoài */
+  border: 2px solid white; /* Đặt độ dày viền thành 2px */
+  border-radius: 50%;
+  animation: pulse 2s infinite; /* Hiệu ứng nhấp nháy */
+}
+
+.play-button svg {
+  width: 24px; /* Kích thước biểu tượng */
+  height: 24px; /* Kích thước biểu tượng */
+  fill: white; /* Đặt màu biểu tượng thành trắng */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 40px; /* Khoảng cách từ dưới lên */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white; /* Màu chữ */
+  text-align: center; /* Căn giữa chữ */
+}
+
+.overlay-text h2 {
+  font-size: 1.25rem; /* Kích thước chữ lớn hơn */
+}
+
+.overlay-text p {
+  font-size: 1rem; /* Kích thước chữ lớn hơn */
+}
+
+.input-custom {
+  background: transparent; /* Đặt nền trong suốt */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Đường viền trắng mờ */
+  color: #e5e7eb; /* Màu chữ sáng */
+}
+
+/* From Uiverse.io by nikk7007 */
+.nut {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17c3b2;
+  position: relative;
+  overflow: hidden;
+  background-color: #573cff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+}
+
+.nut:before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: black;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.nut:hover::before {
+  width: 105%;
+}
+
+.nut:hover {
+  color: white;
 }
