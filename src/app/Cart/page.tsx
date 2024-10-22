@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+
 const Cart = () => {
   return (
     <div>
@@ -142,9 +144,9 @@ const Cart = () => {
             <div className="mb-4">
               <div className="flex justify-between items-center mb-2">
                 <span className="font-bold">Phương thức vận chuyển</span>
-                <a href="/" className="text-sm text-gray-500">
+                <Link href="/" className="text-sm text-gray-500">
                   Lựa chọn khác
-                </a>
+                </Link>
               </div>
               <div className="mb-2">GrabFood</div>
               <hr className="border-t-2 border-gray-500" />
@@ -152,9 +154,9 @@ const Cart = () => {
             <div className="mb-4">
               <div className="flex justify-between items-center mb-2">
                 <span className="font-bold">Hình thức thanh toán</span>
-                <a href="/" className="text-sm text-gray-500">
+                <Link href="/" className="text-sm text-gray-500">
                   Lựa chọn khác
-                </a>
+                </Link>
               </div>
               <div className="flex justify-between items-center mb-2">
                 <span>COD (Thanh toán khi nhận hàng)</span>
