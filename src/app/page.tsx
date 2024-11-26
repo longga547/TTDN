@@ -1,12 +1,44 @@
 import Image from "next/image";
-
 export default function Home() {
+  {
+    /* Browse Categories 1 */
+  }
+  const categories = [
+    {
+      src: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/catagories/catagories3.png",
+      title: "Graphic Design",
+    },
+    {
+      src: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/catagories/catagories4.png",
+      title: "Art & Humanities",
+    },
+    {
+      src: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/catagories/catagories5.png",
+      title: "Mobile Application",
+    },
+    {
+      src: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/catagories/catagories6.png",
+      title: "Development",
+    },
+    {
+      src: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/catagories/catagories1.png",
+      title: "Photography",
+    },
+    {
+      src: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/catagories/catagories2.png",
+      title: "Web Development",
+    }
+  ];
+  {
+    /* Browse Categories 2 */
+  }
+
   return (
     <div>
       <main>
         {/* Banner */}
         <div className="relative flex items-center h-screen bg-gradient-to-r from-purple-500 to-blue-500 ">
-          <div className="absolute lg:w-2/3  text-white md:ml-[80px] ml-[10px] p-6 z-10">
+          <div className="absolute lg:w-2/3 text-white md:ml-[80px] ml-[10px] md:p-6 px-2 z-10">
             <h5 className="lg:text-2xl text-xl font-bold mt-4 mb-8">
               100% Satisfaction Guarantee
             </h5>
@@ -87,7 +119,7 @@ export default function Home() {
           </div>
         </div>
         {/* Browse Categories 1 */}
-        <div className="mx-auto lg:mt-[60px] py-10 md:px-[100px] px-10">
+        <div className="mx-auto lg:mt-[60px] py-10 md:px-[100px] sm:px-10 px-4">
           <p className="text-2xl text-violet-500 font-medium">
             Browse Categories
           </p>
@@ -97,103 +129,67 @@ export default function Home() {
             </div>
             <div className="hidden lg:block ">
               <div className="flex gap-6">
-                <div className="w-[50px] h-[50px] rounded-[50%] bg-violet-500"></div>
-                <div className="w-[50px] h-[50px] rounded-[50%] bg-violet-500"></div>
+                <div className="flex items-center justify-center w-[50px] h-[50px] rounded-[50%] bg-violet-500">
+                  <i>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      height="20px"
+                      viewBox="0 0 6 16"
+                    >
+                      <path
+                        fill="white"
+                        d="M5.5 13a.47.47 0 0 1-.35-.15l-4.5-4.5c-.2-.2-.2-.51 0-.71l4.5-4.49c.2-.2.51-.2.71 0s.2.51 0 .71L1.71 8l4.15 4.15c.2.2.2.51 0 .71c-.1.1-.23.15-.35.15Z"
+                      />
+                    </svg>
+                  </i>
+                </div>
+                <div className="flex items-center justify-center w-[50px] h-[50px] rounded-[50%] bg-violet-500">
+                  <i className="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      height="20px"
+                      viewBox="0 0 6 16"
+                    >
+                      <path
+                        fill="white"
+                        d="M1.5 13a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71L5.3 7.99L1.15 3.85c-.2-.2-.2-.51 0-.71s.51-.2.71 0l4.49 4.51c.2.2.2.51 0 .71l-4.5 4.49c-.1.1-.23.15-.35.15"
+                      />
+                    </svg>
+                  </i>
+                </div>
               </div>
             </div>
           </div>
           {/* image */}
-          <div className="flex gap-2 sm:gap-4 md:gap-10 justify-center mt-10 md:px-[100px] px-10">
-            {/* ảnh 1 */}
-            <div className="flex flex-col">
-              <div className="relative md:w-[284px] md:h-[384px] sm:w-[200px] sm:h-[300px] w-[180px] h-[280px] overflow-hidden">
-                <Image
-                  className="w-full transition-transform duration-300 transform hover:scale-115"
-                  src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/catagories/catagories3.png"
-                  alt=""
-                  width={284} // Set appropriate width
-                  height={384} // Set appropriate height
-                  priority
-                />
-                <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-30 opacity-0 transition-opacity duration-300 hover:opacity-100">
-                  <span className="text-xl text-white font-semibold">
-                    Visit
+          <div className="mt-10 px-4 ">
+            <div className="flex md:gap-10 overflow-x-auto snap-x snap-mandatory scrollbar-hidden ">
+              {categories.map((category, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center snap-center w-[228px] flex-shrink-0"
+                >
+                  <div className="relative md:w-[284px] md:h-[384px] sm:w-[200px] sm:h-[300px] w-[180px] h-[280px] overflow-hidden">
+                    <Image
+                      className="w-full transition-transform duration-300 transform hover:scale-115"
+                      src={category.src}
+                      alt={category.title}
+                      width={284}
+                      height={384}
+                      priority
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-30 opacity-0 transition-opacity duration-300 hover:opacity-100">
+                      <span className="text-xl text-white font-semibold">
+                        Visit
+                      </span>
+                    </div>
+                  </div>
+                  <span className="mt-6 text-2xl text-center font-semibold">
+                    {category.title}
                   </span>
                 </div>
-              </div>
-              <span className="mt-6 text-2xl text-center font-semibold">
-                Graphic Design
-              </span>
-            </div>
-
-            {/* ảnh 2 */}
-            <div className="flex flex-col items-center">
-              <div className="relative md:w-[284px] md:h-[384px] sm:w-[200px] sm:h-[300px] w-[180px] h-[280px] overflow-hidden">
-                <Image
-                  className="w-full transition-transform duration-300 transform hover:scale-115"
-                  src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/catagories/catagories4.png"
-                  alt=""
-                  width={284}
-                  height={384}
-                  priority
-                />
-                <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-30 opacity-0 transition-opacity duration-300 hover:opacity-100">
-                  <span className="text-xl text-white font-semibold">
-                    Visit
-                  </span>
-                </div>
-              </div>
-              <span className="mt-6 text-2xl text-center font-semibold">
-                Art & Humanities
-              </span>
-            </div>
-
-            {/* ảnh 3 */}
-            <div className="hidden lg:block">
-              <div className="flex flex-col items-center">
-                <div className="relative w-[284px] h-[384px] overflow-hidden">
-                  <Image
-                    className="w-full transition-transform duration-300 transform hover:scale-115"
-                    src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/catagories/catagories5.png"
-                    alt=""
-                    width={284}
-                    height={384}
-                    priority
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-30 opacity-0 transition-opacity duration-300 hover:opacity-100">
-                    <span className="text-xl text-white font-semibold">
-                      Visit
-                    </span>
-                  </div>
-                </div>
-                <span className="mt-6 text-2xl text-center font-semibold">
-                  Mobile Application
-                </span>
-              </div>
-            </div>
-
-            {/* ảnh 4 */}
-            <div className="hidden xl:block">
-              <div className="flex flex-col items-center">
-                <div className="relative w-[284px] h-[384px] overflow-hidden">
-                  <Image
-                    className="w-full transition-transform duration-300 transform hover:scale-115"
-                    src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/catagories/catagories6.png"
-                    alt=""
-                    width={284}
-                    height={384}
-                    priority
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-30 opacity-0 transition-opacity duration-300 hover:opacity-100">
-                    <span className="text-xl text-white font-semibold">
-                      Visit
-                    </span>
-                  </div>
-                </div>
-                <span className="mt-6 text-2xl text-center font-semibold">
-                  Development
-                </span>
-              </div>
+              ))}
             </div>
           </div>
         </div>
