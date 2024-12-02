@@ -1,8 +1,7 @@
 import Image from "next/image";
 export default function Home() {
-  {
-    /* Browse Categories 1 */
-  }
+  //  Browse Categories 1
+
   const categories = [
     {
       src: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/catagories/catagories3.png",
@@ -29,10 +28,153 @@ export default function Home() {
       title: "Web Development",
     },
   ];
-  {
-    /* Browse Categories 2 */
-  }
 
+  // Browse Categories 2
+
+  const coursesCates = [
+    {
+      id: 1,
+      name: "Engineering",
+    },
+    {
+      id: 2,
+      name: "Data science",
+    },
+    {
+      id: 3,
+      name: "Graphic Design",
+    },
+    {
+      id: 4,
+      name: "Business",
+    },
+  ];
+  const courses = [
+    {
+      id: 1,
+      nameLesson: "lms The Complete Salesforce	Classic Certification",
+      anh: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course1.png",
+      teacherAnh:
+        "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/shape1.png",
+      teacherName: "Kevin Martin",
+      star: 29,
+      lesson: 23,
+      time: "1 hr 17 min",
+      cost: 45,
+    },
+    {
+      id: 2,
+      nameLesson: "lms The Complete Salesforce	Classic Certification",
+      anh: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course2.png",
+      teacherAnh:
+        "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/shape2.png",
+      teacherName: "Gus Atkinson",
+      star: 29,
+      lesson: 24,
+      time: "1 hr 17 min",
+      cost: 49,
+    },
+    {
+      id: 3,
+      nameLesson: "lms The Complete Salesforce	Classic Certification",
+      anh: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course3.png",
+      teacherAnh:
+        "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/shape2.png",
+      teacherName: "Gus Atkinson",
+      star: 29,
+      lesson: 24,
+      time: "1 hr 17 min",
+      cost: 49,
+    },
+    {
+      id: 4,
+      nameLesson: "lms The Complete Salesforce	Classic Certification",
+      anh: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course4.png",
+      teacherAnh:
+        "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/shape2.png",
+      teacherName: "Gus Atkinson",
+      star: 29,
+      lesson: 24,
+      time: "1 hr 17 min",
+      cost: 49,
+    },
+    {
+      id: 5,
+      nameLesson: "lms The Complete Salesforce	Classic Certification",
+      anh: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course5.png",
+      teacherAnh:
+        "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/shape2.png",
+      teacherName: "Gus Atkinson",
+      star: 29,
+      lesson: 24,
+      time: "1 hr 17 min",
+      cost: 49,
+    },
+    {
+      id: 6,
+      nameLesson: "lms The Complete Salesforce	Classic Certification",
+      anh: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course6.png",
+      teacherAnh:
+        "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/shape2.png",
+      teacherName: "Gus Atkinson",
+      star: 29,
+      lesson: 24,
+      time: "1 hr 17 min",
+      cost: 49,
+    },
+  ];
+
+  // Choose From 5,000 Online
+
+  const upcomingCourses = [
+    {
+      id: 1,
+      anh: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/choose1.png",
+      name: "The Complete Salesforce To Classic Certification",
+      address: " Humberg City, Germany",
+      time: "August 31, 2024",
+    },
+    {
+      id: 2,
+      anh: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/choose2.png",
+      name: "The Complete Salesforce To Classic Certification",
+      address: " Humberg City, Germany",
+      time: "August 31, 2024",
+    },
+    {
+      id: 3,
+      anh: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/choose3.png",
+      name: "The Complete Salesforce To Classic Certification",
+      address: " Humberg City, Germany",
+      time: "August 31, 2024",
+    },
+    {
+      id: 4,
+      anh: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/choose4.png",
+      name: "The Complete Salesforce To Classic Certification",
+      address: " Humberg City, Germany",
+      time: "August 31, 2024",
+    },
+  ];
+
+  // Consult with your favorite
+
+  const personalisedTrainings =[
+    {
+      id:1,
+      anh:"https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team1.png"
+    },
+    {
+      id:2,
+      anh:"https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team2.png"
+    },{
+      id:3,
+      anh:"https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team3.png"
+    },{
+      id:4,
+      anh:"https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team4.png"
+    },
+  ]
   return (
     <div>
       <main>
@@ -119,28 +261,25 @@ export default function Home() {
           </div>
         </div>
         {/* Browse Categories 1 */}
-        <div className="mx-auto lg:mt-[60px] py-10 md:px-[100px] sm:px-10 px-4">
-          <p className="flex items-center gap-2 md:text-2xl text-lg text-violet-500 font-medium">
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24px"
-                height="24px"
-                viewBox="0 0 48 48"
-              >
-                <path
-                  fill="#4026E1"
-                  d="M14.25 4A6.25 6.25 0 0 0 8 10.25v27.5A6.25 6.25 0 0 0 14.25 44h24.5a1.25 1.25 0 1 0 0-2.5h-24.5a3.75 3.75 0 0 1-3.675-3H37.75A2.25 2.25 0 0 0 40 36.25v-26A6.25 6.25 0 0 0 33.75 4zM37.5 36h-27V10.25a3.75 3.75 0 0 1 3.75-3.75h19.5a3.75 3.75 0 0 1 3.75 3.75zM16.25 10A2.25 2.25 0 0 0 14 12.25v4.5A2.25 2.25 0 0 0 16.25 19h15.5A2.25 2.25 0 0 0 34 16.75v-4.5A2.25 2.25 0 0 0 31.75 10zm.25 6.5v-4h15v4z"
-                />
-              </svg>
-            </span>{" "}
-            Browse Categories
-          </p>
-          <div className="flex justify-between items-center ">
-            <div className="md:text-5xl sm:text-4xl text-2xl font-bold my-6 ">
-              Top Courses Categories
+        <div className="mx-auto lg:mt-[60px] py-10 md:px-[100px] sm:px-[60px] px-4">
+          <div className="relative flex justify-between items-center ">
+            <div className="flex items-center gap-2 md:text-2xl text-lg text-violet-500 font-medium">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="#4026E1"
+                    d="M14.25 4A6.25 6.25 0 0 0 8 10.25v27.5A6.25 6.25 0 0 0 14.25 44h24.5a1.25 1.25 0 1 0 0-2.5h-24.5a3.75 3.75 0 0 1-3.675-3H37.75A2.25 2.25 0 0 0 40 36.25v-26A6.25 6.25 0 0 0 33.75 4zM37.5 36h-27V10.25a3.75 3.75 0 0 1 3.75-3.75h19.5a3.75 3.75 0 0 1 3.75 3.75zM16.25 10A2.25 2.25 0 0 0 14 12.25v4.5A2.25 2.25 0 0 0 16.25 19h15.5A2.25 2.25 0 0 0 34 16.75v-4.5A2.25 2.25 0 0 0 31.75 10zm.25 6.5v-4h15v4z"
+                  />
+                </svg>
+              </span>{" "}
+              Browse Categories
             </div>
-            <div className="hidden lg:block ">
+            <div className="hidden md:block ">
               <div className="flex gap-6">
                 <div className="flex items-center justify-center w-[50px] h-[50px] rounded-[50%] bg-violet-500">
                   <i>
@@ -175,6 +314,11 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className="md:text-5xl sm:text-4xl text-2xl font-bold my-6 ">
+            Top Courses Categories
+          </div>
+
           {/* image */}
           <div className="mt-10">
             <div className="flex gap-5 md:gap-12 overflow-x-auto snap-x snap-mandatory scrollbar-hidden ">
@@ -207,7 +351,7 @@ export default function Home() {
           </div>
         </div>
         {/* Browse Categories 2 */}
-        <div className="mx-auto lg:mt-[60px] py-10 md:px-[100px] px-4">
+        <div className="mx-auto lg:mt-[60px] py-10 md:px-[100px] sm:px-[60px] px-4">
           <p className="flex items-center gap-2 md:text-2xl text-lg text-violet-500 font-medium">
             <span>
               <svg
@@ -228,743 +372,150 @@ export default function Home() {
             <div className="md:text-5xl sm:text-4xl text-2xl font-bold my-6  ">
               Top Courses Categories
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 md:gap-6  ">
-              <p className="text-stone-500 font-medium text-lg sm:text-xl hover:text-[#4026E1] duration-300">
-                Engineering
-              </p>
-              <p className="text-stone-500 font-medium text-lg sm:text-xl hover:text-[#4026E1] duration-300">
-                Data science
-              </p>
-              <p className="text-stone-500 font-medium text-lg sm:text-xl hover:text-[#4026E1] duration-300">
-                Graphic Design
-              </p>
-              <p className="text-stone-500 font-medium text-lg sm:text-xl hover:text-[#4026E1] duration-300">
-                Business
-              </p>
+            <div className="grid grid-cols-2 sm:grid-cols-4 md:gap-6 ">
+              {coursesCates.map((coursesCate, index) => (
+                <p
+                  key={index}
+                  className="text-stone-500 text-center font-medium text-lg sm:text-xl hover:text-[#4026E1] duration-300"
+                >
+                  {coursesCate.name}
+                </p>
+              ))}
             </div>
           </div>
           {/* 6 box */}
           <div className="flex-col mt-8 space-y-8">
-            <div className="row11 grid xl:grid-cols-3 lg:grid-cols-2 gap-8">
-              {/* box1 */}
-              <div className="rounded group overflow-hidden shadow-lg bg-white">
-                <div className="relative overflow-hidden">
-                  <Image
-                    className="w-full h-[322px] object-cover group-hover:scale-110 duration-500"
-                    src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course1.png"
-                    alt="Course"
-                    width={400} // Set appropriate width
-                    height={322} // Set appropriate height
-                    priority
-                  />
-                  <div className="absolute top-0 right-0 p-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24px"
-                      height="24px"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="white"
-                        fillRule="evenodd"
-                        d="M5.624 4.424C3.965 5.182 2.75 6.986 2.75 9.137c0 2.197.9 3.891 2.188 5.343c1.063 1.196 2.349 2.188 3.603 3.154q.448.345.885.688c.526.415.995.778 1.448 1.043s.816.385 1.126.385s.674-.12 1.126-.385c.453-.265.922-.628 1.448-1.043q.437-.344.885-.687c1.254-.968 2.54-1.959 3.603-3.155c1.289-1.452 2.188-3.146 2.188-5.343c0-2.15-1.215-3.955-2.874-4.713c-1.612-.737-3.778-.542-5.836 1.597a.75.75 0 0 1-1.08 0C9.402 3.882 7.236 3.687 5.624 4.424M12 4.46C9.688 2.39 7.099 2.1 5 3.059C2.786 4.074 1.25 6.426 1.25 9.138c0 2.665 1.11 4.699 2.567 6.339c1.166 1.313 2.593 2.412 3.854 3.382q.43.33.826.642c.513.404 1.063.834 1.62 1.16s1.193.59 1.883.59s1.326-.265 1.883-.59c.558-.326 1.107-.756 1.62-1.16q.396-.312.826-.642c1.26-.97 2.688-2.07 3.854-3.382c1.457-1.64 2.567-3.674 2.567-6.339c0-2.712-1.535-5.064-3.75-6.077c-2.099-.96-4.688-.67-7 1.399"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <div className="absolute flex items-center justify-between pl-[30px] bottom-0 left-0 right-0 bg-[#203f50] bg-opacity-30 group-hover:bg-[#4026E1] duration-500  p-4">
-                    <div className="flex items-center gap-2">
-                      <div className="w-[40px] h-[40px]">
-                        <Image
-                          className="hidden group-hover:block duration-500"
-                          src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/shape1.png"
-                          alt="Course"
-                          width={40}
-                          height={40}
-                          priority
-                        />
-                      </div>
-                      <div className=" text-white font-semibold ">
-                        Kevin Martin
-                      </div>
-                    </div>
-                    <div className="flex items-center">
-                      <span className="text-yellow-400 text-2xl">★★★★★</span>
-                      <span className="text-white text-xl ml-2">(29)</span>
-                    </div>
-                  </div>
-                </div>
-                {/* Content Section */}
-                <div className="flex justify-between px-6 py-2">
-                  <p className="flex gap-2 items-center text-gray-700 text-base">
-                    {" "}
-                    <span>
+            <div className="row11 grid xl:grid-cols-3 md:grid-cols-2 gap-8">
+              {courses.map((course, index) => (
+                <div
+                  key={index}
+                  className="rounded group overflow-hidden shadow-lg bg-white"
+                >
+                  <div className="relative overflow-hidden">
+                    <Image
+                      className="w-full h-[322px] object-cover group-hover:scale-110 duration-500"
+                      src={course.anh}
+                      alt="Course"
+                      width={400} // Set appropriate width
+                      height={322} // Set appropriate height
+                      priority
+                    />
+                    <div className="absolute top-0 right-0 p-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 32 32"
-                      >
-                        <path
-                          fill="none"
-                          stroke="#4026E1"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M16 7S9 1 2 6v22c7-5 14 0 14 0s7-5 14 0V6c-7-5-14 1-14 1m0 0v21"
-                        />
-                      </svg>
-                    </span>
-                    22 Lessons
-                  </p>
-                  <p className="flex items-center gap-2 text-gray-700 text-base">
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
+                        width="24px"
+                        height="24px"
                         viewBox="0 0 24 24"
                       >
-                        <g
-                          fill="none"
-                          stroke="#4026E1"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="1.5"
+                        <path
+                          fill="white"
+                          fillRule="evenodd"
+                          d="M5.624 4.424C3.965 5.182 2.75 6.986 2.75 9.137c0 2.197.9 3.891 2.188 5.343c1.063 1.196 2.349 2.188 3.603 3.154q.448.345.885.688c.526.415.995.778 1.448 1.043s.816.385 1.126.385s.674-.12 1.126-.385c.453-.265.922-.628 1.448-1.043q.437-.344.885-.687c1.254-.968 2.54-1.959 3.603-3.155c1.289-1.452 2.188-3.146 2.188-5.343c0-2.15-1.215-3.955-2.874-4.713c-1.612-.737-3.778-.542-5.836 1.597a.75.75 0 0 1-1.08 0C9.402 3.882 7.236 3.687 5.624 4.424M12 4.46C9.688 2.39 7.099 2.1 5 3.059C2.786 4.074 1.25 6.426 1.25 9.138c0 2.665 1.11 4.699 2.567 6.339c1.166 1.313 2.593 2.412 3.854 3.382q.43.33.826.642c.513.404 1.063.834 1.62 1.16s1.193.59 1.883.59s1.326-.265 1.883-.59c.558-.326 1.107-.756 1.62-1.16q.396-.312.826-.642c1.26-.97 2.688-2.07 3.854-3.382c1.457-1.64 2.567-3.674 2.567-6.339c0-2.712-1.535-5.064-3.75-6.077c-2.099-.96-4.688-.67-7 1.399"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div className="absolute flex items-center justify-between pl-[30px] bottom-0 left-0 right-0 bg-[#203f50] bg-opacity-30 group-hover:bg-[#4026E1] duration-500  p-4">
+                      <div className="flex items-center gap-2">
+                        <div className="w-[40px] h-[40px]">
+                          <Image
+                            className="hidden group-hover:block duration-500"
+                            src={course.teacherAnh}
+                            alt="Course"
+                            width={40}
+                            height={40}
+                            priority
+                          />
+                        </div>
+                        <div className=" text-white font-semibold ">
+                          {course.teacherName}
+                        </div>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="text-yellow-400 text-2xl">★★★★★</span>
+                        <span className="text-white text-xl ml-2">
+                          ({course.star})
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Content Section */}
+                  <div className="flex justify-between px-6 py-2">
+                    <p className="flex gap-2 items-center text-gray-700 text-base">
+                      {" "}
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20px"
+                          height="20px"
+                          viewBox="0 0 32 32"
                         >
-                          <circle cx="12" cy="12" r="9" />
-                          <path d="M11 8v5h5" />
-                        </g>
-                      </svg>
-                    </span>
-                    1 hr 17 min
-                  </p>
-                </div>
-                <div className="px-6 py-2 font-bold text-xl group-hover:text-[#4026E1]">
-                  Ims The Complete Salesforce Classic Certification
-                </div>
-                <div className="w-[90%] flex justify-between mx-auto py-3 mt-2 border-t-[1px] border-stone-200">
-                  <p className="text-lg font-medium">$45.00</p>
-                  <p className="flex items-center gap-2 text-lg font-medium text-stone-500">
-                    {" "}
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill="#4026E1"
-                          d="M14 13.1V12H4.6l.6-1.1l9.2-.9L16 4H3.7L3 1H0v1h2.2l2.1 8.4L3 13v1.5c0 .8.7 1.5 1.5 1.5S6 15.3 6 14.5S5.3 13 4.5 13H12v1.5c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5c0-.7-.4-1.2-1-1.4"
-                        />
-                      </svg>
-                    </span>
-                    Add to cart
-                  </p>
-                </div>
-              </div>
-
-              {/* box2 */}
-              <div className="rounded group overflow-hidden shadow-lg bg-white">
-                <div className="relative overflow-hidden">
-                  <Image
-                    className="w-full h-[322px] object-cover group-hover:scale-110 duration-500"
-                    src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course2.png"
-                    alt="Course"
-                    width={400} // Set appropriate width
-                    height={322} // Set appropriate height
-                    priority
-                  />
-                  <div className="absolute top-0 right-0 p-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24px"
-                      height="24px"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="white"
-                        fillRule="evenodd"
-                        d="M5.624 4.424C3.965 5.182 2.75 6.986 2.75 9.137c0 2.197.9 3.891 2.188 5.343c1.063 1.196 2.349 2.188 3.603 3.154q.448.345.885.688c.526.415.995.778 1.448 1.043s.816.385 1.126.385s.674-.12 1.126-.385c.453-.265.922-.628 1.448-1.043q.437-.344.885-.687c1.254-.968 2.54-1.959 3.603-3.155c1.289-1.452 2.188-3.146 2.188-5.343c0-2.15-1.215-3.955-2.874-4.713c-1.612-.737-3.778-.542-5.836 1.597a.75.75 0 0 1-1.08 0C9.402 3.882 7.236 3.687 5.624 4.424M12 4.46C9.688 2.39 7.099 2.1 5 3.059C2.786 4.074 1.25 6.426 1.25 9.138c0 2.665 1.11 4.699 2.567 6.339c1.166 1.313 2.593 2.412 3.854 3.382q.43.33.826.642c.513.404 1.063.834 1.62 1.16s1.193.59 1.883.59s1.326-.265 1.883-.59c.558-.326 1.107-.756 1.62-1.16q.396-.312.826-.642c1.26-.97 2.688-2.07 3.854-3.382c1.457-1.64 2.567-3.674 2.567-6.339c0-2.712-1.535-5.064-3.75-6.077c-2.099-.96-4.688-.67-7 1.399"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <div className="absolute flex items-center justify-between pl-[30px] bottom-0 left-0 right-0 bg-[#203f50] bg-opacity-30 group-hover:bg-[#4026E1] duration-500  p-4">
-                    <div className="flex items-center gap-2">
-                      <div className="w-[40px] h-[40px]">
-                        <Image
-                          className="hidden group-hover:block duration-500"
-                          src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/shape1.png"
-                          alt="Course"
-                          width={40}
-                          height={40}
-                          priority
-                        />
-                      </div>
-                      <div className=" text-white font-semibold ">
-                        Kevin Martin
-                      </div>
-                    </div>
-                    <div className="flex items-center">
-                      <span className="text-yellow-400 text-2xl">★★★★★</span>
-                      <span className="text-white text-xl ml-2">(29)</span>
-                    </div>
-                  </div>
-                </div>
-                {/* Content Section */}
-                <div className="flex justify-between px-6 py-2">
-                  <p className="flex gap-2 items-center text-gray-700 text-base">
-                    {" "}
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 32 32"
-                      >
-                        <path
-                          fill="none"
-                          stroke="#4026E1"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M16 7S9 1 2 6v22c7-5 14 0 14 0s7-5 14 0V6c-7-5-14 1-14 1m0 0v21"
-                        />
-                      </svg>
-                    </span>
-                    22 Lessons
-                  </p>
-                  <p className="flex items-center gap-2 text-gray-700 text-base">
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 24 24"
-                      >
-                        <g
-                          fill="none"
-                          stroke="#4026E1"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="1.5"
+                          <path
+                            fill="none"
+                            stroke="#4026E1"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M16 7S9 1 2 6v22c7-5 14 0 14 0s7-5 14 0V6c-7-5-14 1-14 1m0 0v21"
+                          />
+                        </svg>
+                      </span>
+                      {course.lesson} Lessons
+                    </p>
+                    <p className="flex items-center gap-2 text-gray-700 text-base">
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20px"
+                          height="20px"
+                          viewBox="0 0 24 24"
                         >
-                          <circle cx="12" cy="12" r="9" />
-                          <path d="M11 8v5h5" />
-                        </g>
-                      </svg>
-                    </span>
-                    1 hr 17 min
-                  </p>
-                </div>
-                <div className="px-6 py-2 font-bold text-xl group-hover:text-[#4026E1]">
-                  Ims The Complete Salesforce Classic Certification
-                </div>
-                <div className="w-[90%] flex justify-between mx-auto py-3 mt-2 border-t-[1px] border-stone-200">
-                  <p className="text-lg font-medium">$45.00</p>
-                  <p className="flex items-center gap-2 text-lg font-medium text-stone-500">
-                    {" "}
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill="#4026E1"
-                          d="M14 13.1V12H4.6l.6-1.1l9.2-.9L16 4H3.7L3 1H0v1h2.2l2.1 8.4L3 13v1.5c0 .8.7 1.5 1.5 1.5S6 15.3 6 14.5S5.3 13 4.5 13H12v1.5c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5c0-.7-.4-1.2-1-1.4"
-                        />
-                      </svg>
-                    </span>
-                    Add to cart
-                  </p>
-                </div>
-              </div>
-
-              {/* box3 */}
-              <div className="rounded group overflow-hidden shadow-lg bg-white">
-                <div className="relative overflow-hidden">
-                  <Image
-                    className="w-full h-[322px] object-cover group-hover:scale-110 duration-500"
-                    src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course3.png"
-                    alt="Course"
-                    width={400} // Set appropriate width
-                    height={322} // Set appropriate height
-                    priority
-                  />
-                  <div className="absolute top-0 right-0 p-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24px"
-                      height="24px"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="white"
-                        fillRule="evenodd"
-                        d="M5.624 4.424C3.965 5.182 2.75 6.986 2.75 9.137c0 2.197.9 3.891 2.188 5.343c1.063 1.196 2.349 2.188 3.603 3.154q.448.345.885.688c.526.415.995.778 1.448 1.043s.816.385 1.126.385s.674-.12 1.126-.385c.453-.265.922-.628 1.448-1.043q.437-.344.885-.687c1.254-.968 2.54-1.959 3.603-3.155c1.289-1.452 2.188-3.146 2.188-5.343c0-2.15-1.215-3.955-2.874-4.713c-1.612-.737-3.778-.542-5.836 1.597a.75.75 0 0 1-1.08 0C9.402 3.882 7.236 3.687 5.624 4.424M12 4.46C9.688 2.39 7.099 2.1 5 3.059C2.786 4.074 1.25 6.426 1.25 9.138c0 2.665 1.11 4.699 2.567 6.339c1.166 1.313 2.593 2.412 3.854 3.382q.43.33.826.642c.513.404 1.063.834 1.62 1.16s1.193.59 1.883.59s1.326-.265 1.883-.59c.558-.326 1.107-.756 1.62-1.16q.396-.312.826-.642c1.26-.97 2.688-2.07 3.854-3.382c1.457-1.64 2.567-3.674 2.567-6.339c0-2.712-1.535-5.064-3.75-6.077c-2.099-.96-4.688-.67-7 1.399"
-                        clipRule="evenodd"
-                      />
-                    </svg>
+                          <g
+                            fill="none"
+                            stroke="#4026E1"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="1.5"
+                          >
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M11 8v5h5" />
+                          </g>
+                        </svg>
+                      </span>
+                      {course.time}
+                    </p>
                   </div>
-                  <div className="absolute flex items-center justify-between pl-[30px] bottom-0 left-0 right-0 bg-[#203f50] bg-opacity-30 group-hover:bg-[#4026E1] duration-500  p-4">
-                    <div className="flex items-center gap-2">
-                      <div className="w-[40px] h-[40px]">
-                        <Image
-                          className="hidden group-hover:block duration-500"
-                          src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/shape1.png"
-                          alt="Course"
-                          width={40}
-                          height={40}
-                          priority
-                        />
-                      </div>
-                      <div className=" text-white font-semibold ">
-                        Kevin Martin
-                      </div>
-                    </div>
-                    <div className="flex items-center">
-                      <span className="text-yellow-400 text-2xl">★★★★★</span>
-                      <span className="text-white text-xl ml-2">(29)</span>
-                    </div>
+                  <div className="px-6 py-2 font-bold text-xl group-hover:text-[#4026E1]">
+                    {course.nameLesson}
                   </div>
-                </div>
-                {/* Content Section */}
-                <div className="flex justify-between px-6 py-2">
-                  <p className="flex gap-2 items-center text-gray-700 text-base">
-                    {" "}
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 32 32"
-                      >
-                        <path
-                          fill="none"
-                          stroke="#4026E1"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M16 7S9 1 2 6v22c7-5 14 0 14 0s7-5 14 0V6c-7-5-14 1-14 1m0 0v21"
-                        />
-                      </svg>
-                    </span>
-                    22 Lessons
-                  </p>
-                  <p className="flex items-center gap-2 text-gray-700 text-base">
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 24 24"
-                      >
-                        <g
-                          fill="none"
-                          stroke="#4026E1"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="1.5"
+                  <div className="w-[90%] flex justify-between mx-auto py-3 mt-2 border-t-[1px] border-stone-200">
+                    <p className="text-lg font-medium">${course.cost}.00</p>
+                    <p className="flex items-center gap-2 text-lg font-medium text-stone-500">
+                      {" "}
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20px"
+                          height="20px"
+                          viewBox="0 0 16 16"
                         >
-                          <circle cx="12" cy="12" r="9" />
-                          <path d="M11 8v5h5" />
-                        </g>
-                      </svg>
-                    </span>
-                    1 hr 17 min
-                  </p>
-                </div>
-                <div className="px-6 py-2 font-bold text-xl group-hover:text-[#4026E1]">
-                  Ims The Complete Salesforce Classic Certification
-                </div>
-                <div className="w-[90%] flex justify-between mx-auto py-3 mt-2 border-t-[1px] border-stone-200">
-                  <p className="text-lg font-medium">$45.00</p>
-                  <p className="flex items-center gap-2 text-lg font-medium text-stone-500">
-                    {" "}
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill="#4026E1"
-                          d="M14 13.1V12H4.6l.6-1.1l9.2-.9L16 4H3.7L3 1H0v1h2.2l2.1 8.4L3 13v1.5c0 .8.7 1.5 1.5 1.5S6 15.3 6 14.5S5.3 13 4.5 13H12v1.5c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5c0-.7-.4-1.2-1-1.4"
-                        />
-                      </svg>
-                    </span>
-                    Add to cart
-                  </p>
-                </div>
-              </div>
-
-              {/* box4 */}
-              <div className="rounded group overflow-hidden shadow-lg bg-white">
-                <div className="relative overflow-hidden">
-                  <Image
-                    className="w-full h-[322px] object-cover group-hover:scale-110 duration-500"
-                    src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course4.png"
-                    alt="Course"
-                    width={400} // Set appropriate width
-                    height={322} // Set appropriate height
-                    priority
-                  />
-                  <div className="absolute top-0 right-0 p-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24px"
-                      height="24px"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="white"
-                        fillRule="evenodd"
-                        d="M5.624 4.424C3.965 5.182 2.75 6.986 2.75 9.137c0 2.197.9 3.891 2.188 5.343c1.063 1.196 2.349 2.188 3.603 3.154q.448.345.885.688c.526.415.995.778 1.448 1.043s.816.385 1.126.385s.674-.12 1.126-.385c.453-.265.922-.628 1.448-1.043q.437-.344.885-.687c1.254-.968 2.54-1.959 3.603-3.155c1.289-1.452 2.188-3.146 2.188-5.343c0-2.15-1.215-3.955-2.874-4.713c-1.612-.737-3.778-.542-5.836 1.597a.75.75 0 0 1-1.08 0C9.402 3.882 7.236 3.687 5.624 4.424M12 4.46C9.688 2.39 7.099 2.1 5 3.059C2.786 4.074 1.25 6.426 1.25 9.138c0 2.665 1.11 4.699 2.567 6.339c1.166 1.313 2.593 2.412 3.854 3.382q.43.33.826.642c.513.404 1.063.834 1.62 1.16s1.193.59 1.883.59s1.326-.265 1.883-.59c.558-.326 1.107-.756 1.62-1.16q.396-.312.826-.642c1.26-.97 2.688-2.07 3.854-3.382c1.457-1.64 2.567-3.674 2.567-6.339c0-2.712-1.535-5.064-3.75-6.077c-2.099-.96-4.688-.67-7 1.399"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <div className="absolute flex items-center justify-between pl-[30px] bottom-0 left-0 right-0 bg-[#203f50] bg-opacity-30 group-hover:bg-[#4026E1] duration-500  p-4">
-                    <div className="flex items-center gap-2">
-                      <div className="w-[40px] h-[40px]">
-                        <Image
-                          className="hidden group-hover:block duration-500"
-                          src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/shape1.png"
-                          alt="Course"
-                          width={40}
-                          height={40}
-                          priority
-                        />
-                      </div>
-                      <div className=" text-white font-semibold ">
-                        Kevin Martin
-                      </div>
-                    </div>
-                    <div className="flex items-center">
-                      <span className="text-yellow-400 text-2xl">★★★★★</span>
-                      <span className="text-white text-xl ml-2">(29)</span>
-                    </div>
+                          <path
+                            fill="#4026E1"
+                            d="M14 13.1V12H4.6l.6-1.1l9.2-.9L16 4H3.7L3 1H0v1h2.2l2.1 8.4L3 13v1.5c0 .8.7 1.5 1.5 1.5S6 15.3 6 14.5S5.3 13 4.5 13H12v1.5c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5c0-.7-.4-1.2-1-1.4"
+                          />
+                        </svg>
+                      </span>
+                      Add to cart
+                    </p>
                   </div>
                 </div>
-                {/* Content Section */}
-                <div className="flex justify-between px-6 py-2">
-                  <p className="flex gap-2 items-center text-gray-700 text-base">
-                    {" "}
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 32 32"
-                      >
-                        <path
-                          fill="none"
-                          stroke="#4026E1"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M16 7S9 1 2 6v22c7-5 14 0 14 0s7-5 14 0V6c-7-5-14 1-14 1m0 0v21"
-                        />
-                      </svg>
-                    </span>
-                    22 Lessons
-                  </p>
-                  <p className="flex items-center gap-2 text-gray-700 text-base">
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 24 24"
-                      >
-                        <g
-                          fill="none"
-                          stroke="#4026E1"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="1.5"
-                        >
-                          <circle cx="12" cy="12" r="9" />
-                          <path d="M11 8v5h5" />
-                        </g>
-                      </svg>
-                    </span>
-                    1 hr 17 min
-                  </p>
-                </div>
-                <div className="px-6 py-2 font-bold text-xl group-hover:text-[#4026E1]">
-                  Ims The Complete Salesforce Classic Certification
-                </div>
-                <div className="w-[90%] flex justify-between mx-auto py-3 mt-2 border-t-[1px] border-stone-200">
-                  <p className="text-lg font-medium">$45.00</p>
-                  <p className="flex items-center gap-2 text-lg font-medium text-stone-500">
-                    {" "}
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill="#4026E1"
-                          d="M14 13.1V12H4.6l.6-1.1l9.2-.9L16 4H3.7L3 1H0v1h2.2l2.1 8.4L3 13v1.5c0 .8.7 1.5 1.5 1.5S6 15.3 6 14.5S5.3 13 4.5 13H12v1.5c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5c0-.7-.4-1.2-1-1.4"
-                        />
-                      </svg>
-                    </span>
-                    Add to cart
-                  </p>
-                </div>
-              </div>
-
-              {/* box5 */}
-              <div className="rounded group overflow-hidden shadow-lg bg-white">
-                <div className="relative overflow-hidden">
-                  <Image
-                    className="w-full h-[322px] object-cover group-hover:scale-110 duration-500"
-                    src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course5.png"
-                    alt="Course"
-                    width={400} // Set appropriate width
-                    height={322} // Set appropriate height
-                    priority
-                  />
-                  <div className="absolute top-0 right-0 p-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24px"
-                      height="24px"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="white"
-                        fillRule="evenodd"
-                        d="M5.624 4.424C3.965 5.182 2.75 6.986 2.75 9.137c0 2.197.9 3.891 2.188 5.343c1.063 1.196 2.349 2.188 3.603 3.154q.448.345.885.688c.526.415.995.778 1.448 1.043s.816.385 1.126.385s.674-.12 1.126-.385c.453-.265.922-.628 1.448-1.043q.437-.344.885-.687c1.254-.968 2.54-1.959 3.603-3.155c1.289-1.452 2.188-3.146 2.188-5.343c0-2.15-1.215-3.955-2.874-4.713c-1.612-.737-3.778-.542-5.836 1.597a.75.75 0 0 1-1.08 0C9.402 3.882 7.236 3.687 5.624 4.424M12 4.46C9.688 2.39 7.099 2.1 5 3.059C2.786 4.074 1.25 6.426 1.25 9.138c0 2.665 1.11 4.699 2.567 6.339c1.166 1.313 2.593 2.412 3.854 3.382q.43.33.826.642c.513.404 1.063.834 1.62 1.16s1.193.59 1.883.59s1.326-.265 1.883-.59c.558-.326 1.107-.756 1.62-1.16q.396-.312.826-.642c1.26-.97 2.688-2.07 3.854-3.382c1.457-1.64 2.567-3.674 2.567-6.339c0-2.712-1.535-5.064-3.75-6.077c-2.099-.96-4.688-.67-7 1.399"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <div className="absolute flex items-center justify-between pl-[30px] bottom-0 left-0 right-0 bg-[#203f50] bg-opacity-30 group-hover:bg-[#4026E1] duration-500  p-4">
-                    <div className="flex items-center gap-2">
-                      <div className="w-[40px] h-[40px]">
-                        <Image
-                          className="hidden group-hover:block duration-500"
-                          src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/shape1.png"
-                          alt="Course"
-                          width={40}
-                          height={40}
-                          priority
-                        />
-                      </div>
-                      <div className=" text-white font-semibold ">
-                        Kevin Martin
-                      </div>
-                    </div>
-                    <div className="flex items-center">
-                      <span className="text-yellow-400 text-2xl">★★★★★</span>
-                      <span className="text-white text-xl ml-2">(29)</span>
-                    </div>
-                  </div>
-                </div>
-                {/* Content Section */}
-                <div className="flex justify-between px-6 py-2">
-                  <p className="flex gap-2 items-center text-gray-700 text-base">
-                    {" "}
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 32 32"
-                      >
-                        <path
-                          fill="none"
-                          stroke="#4026E1"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M16 7S9 1 2 6v22c7-5 14 0 14 0s7-5 14 0V6c-7-5-14 1-14 1m0 0v21"
-                        />
-                      </svg>
-                    </span>
-                    22 Lessons
-                  </p>
-                  <p className="flex items-center gap-2 text-gray-700 text-base">
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 24 24"
-                      >
-                        <g
-                          fill="none"
-                          stroke="#4026E1"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="1.5"
-                        >
-                          <circle cx="12" cy="12" r="9" />
-                          <path d="M11 8v5h5" />
-                        </g>
-                      </svg>
-                    </span>
-                    1 hr 17 min
-                  </p>
-                </div>
-                <div className="px-6 py-2 font-bold text-xl group-hover:text-[#4026E1]">
-                  Ims The Complete Salesforce Classic Certification
-                </div>
-                <div className="w-[90%] flex justify-between mx-auto py-3 mt-2 border-t-[1px] border-stone-200">
-                  <p className="text-lg font-medium">$45.00</p>
-                  <p className="flex items-center gap-2 text-lg font-medium text-stone-500">
-                    {" "}
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill="#4026E1"
-                          d="M14 13.1V12H4.6l.6-1.1l9.2-.9L16 4H3.7L3 1H0v1h2.2l2.1 8.4L3 13v1.5c0 .8.7 1.5 1.5 1.5S6 15.3 6 14.5S5.3 13 4.5 13H12v1.5c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5c0-.7-.4-1.2-1-1.4"
-                        />
-                      </svg>
-                    </span>
-                    Add to cart
-                  </p>
-                </div>
-              </div>
-
-              {/* box6 */}
-              <div className="rounded group overflow-hidden shadow-lg bg-white">
-                <div className="relative overflow-hidden">
-                  <Image
-                    className="w-full h-[322px] object-cover group-hover:scale-110 duration-500"
-                    src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/course6.png"
-                    alt="Course"
-                    width={400} // Set appropriate width
-                    height={322} // Set appropriate height
-                    priority
-                  />
-                  <div className="absolute top-0 right-0 p-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24px"
-                      height="24px"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="white"
-                        fillRule="evenodd"
-                        d="M5.624 4.424C3.965 5.182 2.75 6.986 2.75 9.137c0 2.197.9 3.891 2.188 5.343c1.063 1.196 2.349 2.188 3.603 3.154q.448.345.885.688c.526.415.995.778 1.448 1.043s.816.385 1.126.385s.674-.12 1.126-.385c.453-.265.922-.628 1.448-1.043q.437-.344.885-.687c1.254-.968 2.54-1.959 3.603-3.155c1.289-1.452 2.188-3.146 2.188-5.343c0-2.15-1.215-3.955-2.874-4.713c-1.612-.737-3.778-.542-5.836 1.597a.75.75 0 0 1-1.08 0C9.402 3.882 7.236 3.687 5.624 4.424M12 4.46C9.688 2.39 7.099 2.1 5 3.059C2.786 4.074 1.25 6.426 1.25 9.138c0 2.665 1.11 4.699 2.567 6.339c1.166 1.313 2.593 2.412 3.854 3.382q.43.33.826.642c.513.404 1.063.834 1.62 1.16s1.193.59 1.883.59s1.326-.265 1.883-.59c.558-.326 1.107-.756 1.62-1.16q.396-.312.826-.642c1.26-.97 2.688-2.07 3.854-3.382c1.457-1.64 2.567-3.674 2.567-6.339c0-2.712-1.535-5.064-3.75-6.077c-2.099-.96-4.688-.67-7 1.399"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <div className="absolute flex items-center justify-between pl-[30px] bottom-0 left-0 right-0 bg-[#203f50] bg-opacity-30 group-hover:bg-[#4026E1] duration-500  p-4">
-                    <div className="flex items-center gap-2">
-                      <div className="w-[40px] h-[40px]">
-                        <Image
-                          className="hidden group-hover:block duration-500"
-                          src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/course/shape1.png"
-                          alt="Course"
-                          width={40}
-                          height={40}
-                          priority
-                        />
-                      </div>
-                      <div className=" text-white font-semibold ">
-                        Kevin Martin
-                      </div>
-                    </div>
-                    <div className="flex items-center">
-                      <span className="text-yellow-400 text-2xl">★★★★★</span>
-                      <span className="text-white text-xl ml-2">(29)</span>
-                    </div>
-                  </div>
-                </div>
-                {/* Content Section */}
-                <div className="flex justify-between px-6 py-2">
-                  <p className="flex gap-2 items-center text-gray-700 text-base">
-                    {" "}
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 32 32"
-                      >
-                        <path
-                          fill="none"
-                          stroke="#4026E1"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M16 7S9 1 2 6v22c7-5 14 0 14 0s7-5 14 0V6c-7-5-14 1-14 1m0 0v21"
-                        />
-                      </svg>
-                    </span>
-                    22 Lessons
-                  </p>
-                  <p className="flex items-center gap-2 text-gray-700 text-base">
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 24 24"
-                      >
-                        <g
-                          fill="none"
-                          stroke="#4026E1"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="1.5"
-                        >
-                          <circle cx="12" cy="12" r="9" />
-                          <path d="M11 8v5h5" />
-                        </g>
-                      </svg>
-                    </span>
-                    1 hr 17 min
-                  </p>
-                </div>
-                <div className="px-6 py-2 font-bold text-xl group-hover:text-[#4026E1]">
-                  Ims The Complete Salesforce Classic Certification
-                </div>
-                <div className="w-[90%] flex justify-between mx-auto py-3 mt-2 border-t-[1px] border-stone-200">
-                  <p className="text-lg font-medium">$45.00</p>
-                  <p className="flex items-center gap-2 text-lg font-medium text-stone-500">
-                    {" "}
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill="#4026E1"
-                          d="M14 13.1V12H4.6l.6-1.1l9.2-.9L16 4H3.7L3 1H0v1h2.2l2.1 8.4L3 13v1.5c0 .8.7 1.5 1.5 1.5S6 15.3 6 14.5S5.3 13 4.5 13H12v1.5c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5c0-.7-.4-1.2-1-1.4"
-                        />
-                      </svg>
-                    </span>
-                    Add to cart
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
         {/* One Platfrom Many Courses You */}
         <div className="flex my-4 ">
-          <div className="sm:flex sm:px-[100px] px-4  md:py-[80px] py-8 w-full lg:w-1/2  md:h-[500px] bg-[#002935] ">
+          <div className="sm:flex md:px-[100px] sm:px-[60px] px-4 md:py-[80px] py-8 w-full lg:w-1/2 md:h-[500px] bg-[#002935] ">
             <div className="flex-col space-y-6">
               <div>
                 <p className="text-white font-medium text-xl">
@@ -972,7 +523,7 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <h1 className="text-white text-5xl  font-medium w-full  ">
+                <h1 className="text-white text-5xl font-medium w-full  ">
                   One Platfrom Many Courses You
                 </h1>
               </div>
@@ -1031,25 +582,27 @@ export default function Home() {
             <div className="w-1/2 block sm:hidden md:block lg:hidden sm:my-2 my-6">
               <div className="flex justify-center items-center w-[280px] h-[180px] top-[150px] bg-gradient-to-t from-[#836FFB] to-[#573CFF] text-white p-4">
                 <div className="flex-col justify-center space-y-4">
-                <p className="flex justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="50px"
-                    height="50px"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="none"
-                      stroke="white"
-                      strokeWidth="1.5"
-                      d="m4 11.5l-.485.121A2 2 0 0 0 2 13.561v1.877a2 2 0 0 0 1.515 1.94l1.74.435A.6.6 0 0 0 6 17.231v-5.463a.6.6 0 0 0-.746-.582zm0 0V11a8 8 0 1 1 16 0v.5m0 0l.485.121A2 2 0 0 1 22 13.561v1.877a2 2 0 0 1-1.515 1.94L20 17.5m0-6l-1.255-.314a.6.6 0 0 0-.745.582v5.463a.6.6 0 0 0 .745.582L20 17.5m-5 3h3a2 2 0 0 0 2-2v-1m-5 3a1.5 1.5 0 0 0-1.5-1.5h-3a1.5 1.5 0 0 0 0 3h3a1.5 1.5 0 0 0 1.5-1.5Z"
-                    />
-                  </svg>
-                </p>
+                  <p className="flex justify-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="50px"
+                      height="50px"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="white"
+                        strokeWidth="1.5"
+                        d="m4 11.5l-.485.121A2 2 0 0 0 2 13.561v1.877a2 2 0 0 0 1.515 1.94l1.74.435A.6.6 0 0 0 6 17.231v-5.463a.6.6 0 0 0-.746-.582zm0 0V11a8 8 0 1 1 16 0v.5m0 0l.485.121A2 2 0 0 1 22 13.561v1.877a2 2 0 0 1-1.515 1.94L20 17.5m0-6l-1.255-.314a.6.6 0 0 0-.745.582v5.463a.6.6 0 0 0 .745.582L20 17.5m-5 3h3a2 2 0 0 0 2-2v-1m-5 3a1.5 1.5 0 0 0-1.5-1.5h-3a1.5 1.5 0 0 0 0 3h3a1.5 1.5 0 0 0 1.5-1.5Z"
+                      />
+                    </svg>
+                  </p>
                   <p className="text-xl font-medium flex justify-center">
                     Need Help? Call us
                   </p>
-                  <p className="sm:text-2xl text-xl font-semibold">+91 458 654 528</p>
+                  <p className="sm:text-2xl text-xl font-semibold">
+                    +91 458 654 528
+                  </p>
                 </div>
               </div>
             </div>
@@ -1093,124 +646,74 @@ export default function Home() {
           </div>
         </div>
         {/* Choose From 5,000 Online */}
-        <div className="mx-auto lg:mt-[60px] py-10 md:px-[100px] px-10 ">
-          <p className="text-2xl text-violet-500 font-medium">
+        <div className="mx-auto lg:mt-[60px] py-10 md:px-[100px] sm:px-[60px] px-10 ">
+          <p className="flex items-center gap-2 md:text-2xl text-lg text-violet-500 font-medium">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24px"
+                height="24px"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#4026E1"
+                  d="M14.25 4A6.25 6.25 0 0 0 8 10.25v27.5A6.25 6.25 0 0 0 14.25 44h24.5a1.25 1.25 0 1 0 0-2.5h-24.5a3.75 3.75 0 0 1-3.675-3H37.75A2.25 2.25 0 0 0 40 36.25v-26A6.25 6.25 0 0 0 33.75 4zM37.5 36h-27V10.25a3.75 3.75 0 0 1 3.75-3.75h19.5a3.75 3.75 0 0 1 3.75 3.75zM16.25 10A2.25 2.25 0 0 0 14 12.25v4.5A2.25 2.25 0 0 0 16.25 19h15.5A2.25 2.25 0 0 0 34 16.75v-4.5A2.25 2.25 0 0 0 31.75 10zm.25 6.5v-4h15v4z"
+                />
+              </svg>
+            </span>{" "}
             Choose From 5,000 Online
           </p>
           <div className="lg:flex lg:justify-between items-center ">
-            <div className="md:text-5xl text-4xl font-bold my-6 ">
+            <div className="md:text-5xl sm:text-4xl text-2xl font-bold my-6 ">
               Upcoming Course Section
             </div>
-            <div className="bg-[#573CFF] lg:w-1/6 w-1/4 py-4 lg:px-8 px-2 md:text-xl text-center text-white font-medium  ">
+            <div className="flex items-center justify-center gap-2 bg-[#573CFF] hover:bg-[black] duration-500 w-[185px] p-4 my-4 md:text-xl text-center text-white font-medium  ">
               View All
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 1024 1024"
+                >
+                  <rect width="1024" height="1024" fill="none" />
+                  <path
+                    fill="#fff"
+                    d="M754.752 480H160a32 32 0 1 0 0 64h594.752L521.344 777.344a32 32 0 0 0 45.312 45.312l288-288a32 32 0 0 0 0-45.312l-288-288a32 32 0 1 0-45.312 45.312z"
+                  />
+                </svg>
+              </span>
             </div>
           </div>
           <div className="4box flex-col space-y-4 ">
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
-              {/* box1 */}
-              <div className="flex bg-white p-12 gap-8 shadow-lg">
-                <div>
-                  <Image
-                    src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/choose1.png"
-                    alt=""
-                    className="duration-300 hover:scale-110 hover:brightness-110"
-                    width={200}
-                    height={150}
-                    priority
-                  />
-                </div>
-                <div>
+              {upcomingCourses.map((upcomingCourse, index) => (
+                <div key={index} className="flex bg-white p-12 gap-8 shadow-lg">
                   <div>
-                    <p className="text-[#573CFF] font-medium">
-                      August 31, 2024
-                    </p>
-                    <h3 className="text-xl font-semibold my-4 hover:text-[#573CFF] duration-500">
-                      The Complete Salesforce To Classic Certification
-                    </h3>
-                    <p className="text-[#747474] font-medium">
-                      Humberg City, Germany
-                    </p>
+                    <Image
+                      src={upcomingCourse.anh}
+                      alt="hi"
+                      className="duration-300 hover:scale-110 hover:brightness-110"
+                      width={200}
+                      height={150}
+                      priority
+                    />
+                  </div>
+                  <div>
+                    <div>
+                      <p className="text-[#573CFF] font-medium">
+                        {upcomingCourse.time}
+                      </p>
+                      <h3 className="text-xl font-semibold my-4 hover:text-[#573CFF] duration-500">
+                        {upcomingCourse.name}
+                      </h3>
+                      <p className="text-[#747474] font-medium">
+                        {upcomingCourse.address}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              {/* box2 */}
-              <div className="flex bg-white p-12 gap-8 shadow-lg">
-                <div>
-                  <Image
-                    src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/choose1.png"
-                    alt=""
-                    className="duration-300 hover:scale-110 hover:brightness-110"
-                    width={200}
-                    height={150}
-                    priority
-                  />
-                </div>
-                <div>
-                  <div>
-                    <p className="text-[#573CFF] font-medium">
-                      August 31, 2024
-                    </p>
-                    <h3 className="text-xl font-semibold my-4 hover:text-[#573CFF] duration-500">
-                      The Complete Salesforce To Classic Certification
-                    </h3>
-                    <p className="text-[#747474] font-medium">
-                      Humberg City, Germany
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* box3 */}
-              <div className="flex bg-white p-12 gap-8 shadow-lg">
-                <div>
-                  <Image
-                    src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/choose1.png"
-                    alt=""
-                    className="duration-300 hover:scale-110 hover:brightness-110"
-                    width={200}
-                    height={150}
-                    priority
-                  />
-                </div>
-                <div>
-                  <div>
-                    <p className="text-[#573CFF] font-medium">
-                      August 31, 2024
-                    </p>
-                    <h3 className="text-xl font-semibold my-4 hover:text-[#573CFF] duration-500">
-                      The Complete Salesforce To Classic Certification
-                    </h3>
-                    <p className="text-[#747474] font-medium">
-                      Humberg City, Germany
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* box4 */}
-              <div className="flex bg-white p-12 gap-8 shadow-lg">
-                <div>
-                  <Image
-                    src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/choose1.png"
-                    alt=""
-                    className="duration-300 hover:scale-110 hover:brightness-110"
-                    width={200}
-                    height={150}
-                    priority
-                  />
-                </div>
-                <div>
-                  <div>
-                    <p className="text-[#573CFF] font-medium">
-                      August 31, 2024
-                    </p>
-                    <h3 className="text-xl font-semibold my-4 hover:text-[#573CFF] duration-500">
-                      The Complete Salesforce To Classic Certification
-                    </h3>
-                    <p className="text-[#747474] font-medium">
-                      Humberg City, Germany
-                    </p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
@@ -1225,12 +728,12 @@ export default function Home() {
             </h1>
           </div>
           <div className="4teacher grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 my-12">
-            {/* box1 */}
-            <div className="bg-white rounded-md space-y-4 pb-8 group">
+            {personalisedTrainings.map((personalisedTraining, index)=>(
+            <div key={index} className="bg-white rounded-md space-y-4 pb-8 group">
               <div className="overflow-hidden">
                 <Image
                   className="w-full duration-300 group-hover:scale-110"
-                  src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team1.png"
+                  src={personalisedTraining.anh}
                   alt=""
                   width={300} // Set appropriate width
                   height={300} // Set appropriate height
@@ -1244,72 +747,76 @@ export default function Home() {
                   </h3>
                   <p className="text-[#747474] text-center">Master s Degree</p>
                 </div>
+                {/* icon */}
                 <div className="flex gap-4 justify-center ">
-                  <div className="flex items-center w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]  ">
+                  <div className=" flex items-center hover:bg-[#4026E1] hover:border-0 w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20px"
                       height="20px"
                       viewBox="0 0 24 24"
-                      className="mx-auto "
+                      className="mx-auto fill-[#747474] hover:fill-white"
                     >
-                      <path
-                        fill="#747474"
-                        d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396z"
-                      />
+                      <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396z" />
                     </svg>
                   </div>
-                  <div className="flex items-center w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]  ">
+                  <div className="flex items-center hover:bg-[#4026E1] hover:border-0 w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474] ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="18.32px"
                       height="16px"
                       viewBox="0 0 1231.051 1000"
-                      className="mx-auto"
+                      className="mx-auto fill-[#747474] hover:fill-white"
                     >
-                      <path
-                        fill="#747474"
-                        d="M1231.051 118.453q-51.422 76.487-126.173 130.403q.738 14.46.738 32.687q0 101.273-29.53 202.791q-29.53 101.519-90.215 194.343T841.297 843.145T639.62 957.395t-252.474 42.606q-210.2 0-387.147-113.493q31.406 3.495 60.242 3.495q175.605 0 313.687-108.177q-81.877-1.501-146.654-50.409q-64.777-48.907-89.156-124.988q24.097 4.59 47.566 4.59q33.782 0 66.482-8.812q-87.378-17.5-144.975-87.04q-57.595-69.539-57.595-160.523v-3.126q53.633 29.696 114.416 31.592q-51.762-34.508-82.079-89.999q-30.319-55.491-30.319-120.102q0-68.143 34.151-126.908q95.022 116.607 230.278 186.392q135.258 69.786 290.212 77.514q-6.609-27.543-6.621-57.485q0-104.546 73.994-178.534Q747.623 0 852.169 0q109.456 0 184.392 79.711q85.618-16.959 160.333-61.349q-28.785 90.59-110.933 139.768q75.502-8.972 145.088-39.677z"
-                      />
+                      <path d="M1231.051 118.453q-51.422 76.487-126.173 130.403q.738 14.46.738 32.687q0 101.273-29.53 202.791q-29.53 101.519-90.215 194.343T841.297 843.145T639.62 957.395t-252.474 42.606q-210.2 0-387.147-113.493q31.406 3.495 60.242 3.495q175.605 0 313.687-108.177q-81.877-1.501-146.654-50.409q-64.777-48.907-89.156-124.988q24.097 4.59 47.566 4.59q33.782 0 66.482-8.812q-87.378-17.5-144.975-87.04q-57.595-69.539-57.595-160.523v-3.126q53.633 29.696 114.416 31.592q-51.762-34.508-82.079-89.999q-30.319-55.491-30.319-120.102q0-68.143 34.151-126.908q95.022 116.607 230.278 186.392q135.258 69.786 290.212 77.514q-6.609-27.543-6.621-57.485q0-104.546 73.994-178.534Q747.623 0 852.169 0q109.456 0 184.392 79.711q85.618-16.959 160.333-61.349q-28.785 90.59-110.933 139.768q75.502-8.972 145.088-39.677z" />
                     </svg>
                   </div>
-                  <div className="flex items-center w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]  ">
+                  <div className="flex items-center hover:bg-[#4026E1] hover:border-0 w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20px"
                       height="20px"
                       viewBox="0 0 24 24"
-                      className="mx-auto"
+                      className="mx-auto fill-[#747474] stroke-[#747474] hover:stroke-white hover:fill-white duration-300"
                     >
                       <g fill="none">
                         <path
-                          stroke="#747474"
+                          className="hover:stroke-white"
                           strokeWidth="2"
                           d="M3 11c0-3.771 0-5.657 1.172-6.828S7.229 3 11 3h2c3.771 0 5.657 0 6.828 1.172S21 7.229 21 11v2c0 3.771 0 5.657-1.172 6.828S16.771 21 13 21h-2c-3.771 0-5.657 0-6.828-1.172S3 16.771 3 13z"
                         />
-                        <circle cx="16.5" cy="7.5" r="1.5" fill="#747474" />
                         <circle
+                          className="hover:fill-white"
+                          cx="16.5"
+                          cy="7.5"
+                          r="1.5"
+                          fill="#747474"
+                        />
+                        <circle
+                          className="hover:stroke-white"
                           cx="12"
                           cy="12"
                           r="3"
-                          stroke="#747474"
                           strokeWidth="2"
                         />
                       </g>
                     </svg>
                   </div>
-                  <div className="flex items-center w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]  ">
+                  <div className="flex items-center hover:bg-[#4026E1] hover:border-0 w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20px"
                       height="20px"
                       viewBox="0 0 24 24"
-                      className="mx-auto "
+                      className="mx-auto fill-[#747474] hover:fill-white duration-300"
                     >
                       <g fill="none" fillRule="evenodd">
-                        <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
                         <path
-                          fill="#747474"
+                          className="hover:fill-white"
+                          d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                        />
+                        <path
+                          className="fill-[#747474] hover:fill-white"
                           d="M12 5.5a6.5 6.5 0 1 0 6.326 8H13a1.5 1.5 0 0 1 0-3h7a1.5 1.5 0 0 1 1.5 1.5a9.5 9.5 0 1 1-2.801-6.736a1.5 1.5 0 1 1-2.116 2.127A6.48 6.48 0 0 0 12 5.5"
                         />
                       </g>
@@ -1321,294 +828,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* box2 */}
-            <div className="bg-white rounded-md space-y-4 pb-8 group">
-              <div className="overflow-hidden">
-                <Image
-                  className="w-full duration-300 group-hover:scale-110"
-                  src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team3.png"
-                  alt=""
-                  width={300} // Set appropriate width
-                  height={300} // Set appropriate height
-                  priority
-                />
-              </div>
-              <div className="space-y-4">
-                <div className="space-y-2">
-                  <h3 className="text-2xl font-medium text-center group-hover:text-[#4026E1] duration-500">
-                    Earle Goodman
-                  </h3>
-                  <p className="text-[#747474] text-center">Master s Degree</p>
-                </div>
-                <div className="flex gap-4 justify-center ">
-                  <div className="flex items-center w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]  ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20px"
-                      height="20px"
-                      viewBox="0 0 24 24"
-                      className="mx-auto "
-                    >
-                      <path
-                        fill="#747474"
-                        d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396z"
-                      />
-                    </svg>
-                  </div>
-                  <div className="flex items-center w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]  ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18.32px"
-                      height="16px"
-                      viewBox="0 0 1231.051 1000"
-                      className="mx-auto"
-                    >
-                      <path
-                        fill="#747474"
-                        d="M1231.051 118.453q-51.422 76.487-126.173 130.403q.738 14.46.738 32.687q0 101.273-29.53 202.791q-29.53 101.519-90.215 194.343T841.297 843.145T639.62 957.395t-252.474 42.606q-210.2 0-387.147-113.493q31.406 3.495 60.242 3.495q175.605 0 313.687-108.177q-81.877-1.501-146.654-50.409q-64.777-48.907-89.156-124.988q24.097 4.59 47.566 4.59q33.782 0 66.482-8.812q-87.378-17.5-144.975-87.04q-57.595-69.539-57.595-160.523v-3.126q53.633 29.696 114.416 31.592q-51.762-34.508-82.079-89.999q-30.319-55.491-30.319-120.102q0-68.143 34.151-126.908q95.022 116.607 230.278 186.392q135.258 69.786 290.212 77.514q-6.609-27.543-6.621-57.485q0-104.546 73.994-178.534Q747.623 0 852.169 0q109.456 0 184.392 79.711q85.618-16.959 160.333-61.349q-28.785 90.59-110.933 139.768q75.502-8.972 145.088-39.677z"
-                      />
-                    </svg>
-                  </div>
-                  <div className="flex items-center w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]  ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20px"
-                      height="20px"
-                      viewBox="0 0 24 24"
-                      className="mx-auto"
-                    >
-                      <g fill="none">
-                        <path
-                          stroke="#747474"
-                          strokeWidth="2"
-                          d="M3 11c0-3.771 0-5.657 1.172-6.828S7.229 3 11 3h2c3.771 0 5.657 0 6.828 1.172S21 7.229 21 11v2c0 3.771 0 5.657-1.172 6.828S16.771 21 13 21h-2c-3.771 0-5.657 0-6.828-1.172S3 16.771 3 13z"
-                        />
-                        <circle cx="16.5" cy="7.5" r="1.5" fill="#747474" />
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="3"
-                          stroke="#747474"
-                          strokeWidth="2"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                  <div className="flex items-center w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]  ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20px"
-                      height="20px"
-                      viewBox="0 0 24 24"
-                      className="mx-auto "
-                    >
-                      <g fill="none" fillRule="evenodd">
-                        <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                        <path
-                          fill="#747474"
-                          d="M12 5.5a6.5 6.5 0 1 0 6.326 8H13a1.5 1.5 0 0 1 0-3h7a1.5 1.5 0 0 1 1.5 1.5a9.5 9.5 0 1 1-2.801-6.736a1.5 1.5 0 1 1-2.116 2.127A6.48 6.48 0 0 0 12 5.5"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <div className="bg-[#e6e2ff] w-3/4 mx-auto p-2 text-center text-lg font-medium rounded-sm group-hover:text-white group-hover:bg-[#4026E1] duration-500">
-                  Book Schedule
-                </div>
-              </div>
-            </div>
-            {/* box3 */}
-            <div className="bg-white rounded-md space-y-4 pb-8 group">
-              <div className="overflow-hidden">
-                <Image
-                  className="w-full duration-300 group-hover:scale-110"
-                  src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team2.png"
-                  alt=""
-                  width={300} // Set appropriate width
-                  height={300} // Set appropriate height
-                  priority
-                />
-              </div>
-              <div className="space-y-4">
-                <div className="space-y-2">
-                  <h3 className="text-2xl font-medium text-center group-hover:text-[#4026E1] duration-500">
-                    Earle Goodman
-                  </h3>
-                  <p className="text-[#747474] text-center">Master s Degree</p>
-                </div>
-                <div className="flex gap-4 justify-center ">
-                  <div className="flex items-center w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]  ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20px"
-                      height="20px"
-                      viewBox="0 0 24 24"
-                      className="mx-auto "
-                    >
-                      <path
-                        fill="#747474"
-                        d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396z"
-                      />
-                    </svg>
-                  </div>
-                  <div className="flex items-center w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]  ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18.32px"
-                      height="16px"
-                      viewBox="0 0 1231.051 1000"
-                      className="mx-auto"
-                    >
-                      <path
-                        fill="#747474"
-                        d="M1231.051 118.453q-51.422 76.487-126.173 130.403q.738 14.46.738 32.687q0 101.273-29.53 202.791q-29.53 101.519-90.215 194.343T841.297 843.145T639.62 957.395t-252.474 42.606q-210.2 0-387.147-113.493q31.406 3.495 60.242 3.495q175.605 0 313.687-108.177q-81.877-1.501-146.654-50.409q-64.777-48.907-89.156-124.988q24.097 4.59 47.566 4.59q33.782 0 66.482-8.812q-87.378-17.5-144.975-87.04q-57.595-69.539-57.595-160.523v-3.126q53.633 29.696 114.416 31.592q-51.762-34.508-82.079-89.999q-30.319-55.491-30.319-120.102q0-68.143 34.151-126.908q95.022 116.607 230.278 186.392q135.258 69.786 290.212 77.514q-6.609-27.543-6.621-57.485q0-104.546 73.994-178.534Q747.623 0 852.169 0q109.456 0 184.392 79.711q85.618-16.959 160.333-61.349q-28.785 90.59-110.933 139.768q75.502-8.972 145.088-39.677z"
-                      />
-                    </svg>
-                  </div>
-                  <div className="flex items-center w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]  ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20px"
-                      height="20px"
-                      viewBox="0 0 24 24"
-                      className="mx-auto"
-                    >
-                      <g fill="none">
-                        <path
-                          stroke="#747474"
-                          strokeWidth="2"
-                          d="M3 11c0-3.771 0-5.657 1.172-6.828S7.229 3 11 3h2c3.771 0 5.657 0 6.828 1.172S21 7.229 21 11v2c0 3.771 0 5.657-1.172 6.828S16.771 21 13 21h-2c-3.771 0-5.657 0-6.828-1.172S3 16.771 3 13z"
-                        />
-                        <circle cx="16.5" cy="7.5" r="1.5" fill="#747474" />
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="3"
-                          stroke="#747474"
-                          strokeWidth="2"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                  <div className="flex items-center w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]  ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20px"
-                      height="20px"
-                      viewBox="0 0 24 24"
-                      className="mx-auto "
-                    >
-                      <g fill="none" fillRule="evenodd">
-                        <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                        <path
-                          fill="#747474"
-                          d="M12 5.5a6.5 6.5 0 1 0 6.326 8H13a1.5 1.5 0 0 1 0-3h7a1.5 1.5 0 0 1 1.5 1.5a9.5 9.5 0 1 1-2.801-6.736a1.5 1.5 0 1 1-2.116 2.127A6.48 6.48 0 0 0 12 5.5"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <div className="bg-[#e6e2ff] w-3/4 mx-auto p-2 text-center text-lg font-medium rounded-sm group-hover:text-white group-hover:bg-[#4026E1] duration-500">
-                  Book Schedule
-                </div>
-              </div>
-            </div>
-            {/* box4 */}
-            <div className="bg-white rounded-md space-y-4 pb-8 group">
-              <div className="overflow-hidden">
-                <Image
-                  className="w-full duration-300 group-hover:scale-110"
-                  src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team4.png"
-                  alt=""
-                  width={300} // Set appropriate width
-                  height={300} // Set appropriate height
-                  priority
-                />
-              </div>
-              <div className="space-y-4">
-                <div className="space-y-2">
-                  <h3 className="text-2xl font-medium text-center group-hover:text-[#4026E1] duration-500">
-                    Earle Goodman
-                  </h3>
-                  <p className="text-[#747474] text-center">Master s Degree</p>
-                </div>
-                <div className="flex gap-4 justify-center ">
-                  <div className="flex items-center w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]  ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20px"
-                      height="20px"
-                      viewBox="0 0 24 24"
-                      className="mx-auto "
-                    >
-                      <path
-                        fill="#747474"
-                        d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396z"
-                      />
-                    </svg>
-                  </div>
-                  <div className="flex items-center w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]  ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18.32px"
-                      height="16px"
-                      viewBox="0 0 1231.051 1000"
-                      className="mx-auto"
-                    >
-                      <path
-                        fill="#747474"
-                        d="M1231.051 118.453q-51.422 76.487-126.173 130.403q.738 14.46.738 32.687q0 101.273-29.53 202.791q-29.53 101.519-90.215 194.343T841.297 843.145T639.62 957.395t-252.474 42.606q-210.2 0-387.147-113.493q31.406 3.495 60.242 3.495q175.605 0 313.687-108.177q-81.877-1.501-146.654-50.409q-64.777-48.907-89.156-124.988q24.097 4.59 47.566 4.59q33.782 0 66.482-8.812q-87.378-17.5-144.975-87.04q-57.595-69.539-57.595-160.523v-3.126q53.633 29.696 114.416 31.592q-51.762-34.508-82.079-89.999q-30.319-55.491-30.319-120.102q0-68.143 34.151-126.908q95.022 116.607 230.278 186.392q135.258 69.786 290.212 77.514q-6.609-27.543-6.621-57.485q0-104.546 73.994-178.534Q747.623 0 852.169 0q109.456 0 184.392 79.711q85.618-16.959 160.333-61.349q-28.785 90.59-110.933 139.768q75.502-8.972 145.088-39.677z"
-                      />
-                    </svg>
-                  </div>
-                  <div className="flex items-center w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]  ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20px"
-                      height="20px"
-                      viewBox="0 0 24 24"
-                      className="mx-auto"
-                    >
-                      <g fill="none">
-                        <path
-                          stroke="#747474"
-                          strokeWidth="2"
-                          d="M3 11c0-3.771 0-5.657 1.172-6.828S7.229 3 11 3h2c3.771 0 5.657 0 6.828 1.172S21 7.229 21 11v2c0 3.771 0 5.657-1.172 6.828S16.771 21 13 21h-2c-3.771 0-5.657 0-6.828-1.172S3 16.771 3 13z"
-                        />
-                        <circle cx="16.5" cy="7.5" r="1.5" fill="#747474" />
-                        <circle
-                          cx="12"
-                          cy="12"
-                          r="3"
-                          stroke="#747474"
-                          strokeWidth="2"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                  <div className="flex items-center w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]  ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20px"
-                      height="20px"
-                      viewBox="0 0 24 24"
-                      className="mx-auto "
-                    >
-                      <g fill="none" fillRule="evenodd">
-                        <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                        <path
-                          fill="#747474"
-                          d="M12 5.5a6.5 6.5 0 1 0 6.326 8H13a1.5 1.5 0 0 1 0-3h7a1.5 1.5 0 0 1 1.5 1.5a9.5 9.5 0 1 1-2.801-6.736a1.5 1.5 0 1 1-2.116 2.127A6.48 6.48 0 0 0 12 5.5"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <div className="bg-[#e6e2ff] w-3/4 mx-auto p-2 text-center text-lg font-medium rounded-sm group-hover:text-white group-hover:bg-[#4026E1] duration-500">
-                  Book Schedule
-                </div>
-              </div>
-            </div>
+            ))}
+            
           </div>
           {/* 2box bự */}
           <div className="">
@@ -1661,7 +882,8 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <div>
+      {/* Duy */}
+      <div className="duyy">
         {/* PHAN 1 */}
         <div className="bg-gray-100 p-6">
           <div className="text-center mb-6">
@@ -1675,7 +897,7 @@ export default function Home() {
               Video Tutorials
             </h1>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 px-4 md:px-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4 md:px-16">
             <div className="col image-container">
               <Image
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/video1.png"
