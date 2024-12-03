@@ -159,22 +159,24 @@ export default function Home() {
 
   // Consult with your favorite
 
-  const personalisedTrainings =[
+  const personalisedTrainings = [
     {
-      id:1,
-      anh:"https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team1.png"
+      id: 1,
+      anh: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team1.png",
     },
     {
-      id:2,
-      anh:"https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team2.png"
-    },{
-      id:3,
-      anh:"https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team3.png"
-    },{
-      id:4,
-      anh:"https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team4.png"
+      id: 2,
+      anh: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team2.png",
     },
-  ]
+    {
+      id: 3,
+      anh: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team3.png",
+    },
+    {
+      id: 4,
+      anh: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team4.png",
+    },
+  ];
   return (
     <div>
       <main>
@@ -720,7 +722,20 @@ export default function Home() {
         {/* Consult with your favorite */}
         <div className="mx-auto mt-[60px] py-10 lg:px-[100px] sm:px-[60px] px-[20px] bg-[#F9F8FF]">
           <div className="space-y-4">
-            <p className="text-[#4026E1] text-center font-medium text-xl tracking-widest">
+            <p className="flex items-center justify-center gap-2 text-[#4026E1] font-medium text-xl tracking-widest">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="#4026E1"
+                    d="M14.25 4A6.25 6.25 0 0 0 8 10.25v27.5A6.25 6.25 0 0 0 14.25 44h24.5a1.25 1.25 0 1 0 0-2.5h-24.5a3.75 3.75 0 0 1-3.675-3H37.75A2.25 2.25 0 0 0 40 36.25v-26A6.25 6.25 0 0 0 33.75 4zM37.5 36h-27V10.25a3.75 3.75 0 0 1 3.75-3.75h19.5a3.75 3.75 0 0 1 3.75 3.75zM16.25 10A2.25 2.25 0 0 0 14 12.25v4.5A2.25 2.25 0 0 0 16.25 19h15.5A2.25 2.25 0 0 0 34 16.75v-4.5A2.25 2.25 0 0 0 31.75 10zm.25 6.5v-4h15v4z"
+                  />
+                </svg>
+              </span>{" "}
               Consult with your favorite
             </p>
             <h1 className="text-5xl font-medium text-center">
@@ -728,108 +743,112 @@ export default function Home() {
             </h1>
           </div>
           <div className="4teacher grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 my-12">
-            {personalisedTrainings.map((personalisedTraining, index)=>(
-            <div key={index} className="bg-white rounded-md space-y-4 pb-8 group">
-              <div className="overflow-hidden">
-                <Image
-                  className="w-full duration-300 group-hover:scale-110"
-                  src={personalisedTraining.anh}
-                  alt=""
-                  width={300} // Set appropriate width
-                  height={300} // Set appropriate height
-                  priority
-                />
+            {personalisedTrainings.map((personalisedTraining, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-md space-y-4 pb-8 group"
+              >
+                <div className="overflow-hidden">
+                  <Image
+                    className="w-full duration-300 group-hover:scale-110"
+                    src={personalisedTraining.anh}
+                    alt=""
+                    width={300} // Set appropriate width
+                    height={300} // Set appropriate height
+                    priority
+                  />
+                </div>
+                <div className="space-y-4">
+                  <div className="space-y-2">
+                    <h3 className="text-2xl font-medium text-center  group-hover:text-[#4026E1] duration-500">
+                      Earle Goodman
+                    </h3>
+                    <p className="text-[#747474] text-center">
+                      Master s Degree
+                    </p>
+                  </div>
+                  {/* icon */}
+                  <div className="flex gap-4 justify-center ">
+                    <div className=" flex items-center hover:bg-[#4026E1] hover:border-0 w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        viewBox="0 0 24 24"
+                        className="mx-auto fill-[#747474] hover:fill-white"
+                      >
+                        <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396z" />
+                      </svg>
+                    </div>
+                    <div className="flex items-center hover:bg-[#4026E1] hover:border-0 w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474] ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18.32px"
+                        height="16px"
+                        viewBox="0 0 1231.051 1000"
+                        className="mx-auto fill-[#747474] hover:fill-white"
+                      >
+                        <path d="M1231.051 118.453q-51.422 76.487-126.173 130.403q.738 14.46.738 32.687q0 101.273-29.53 202.791q-29.53 101.519-90.215 194.343T841.297 843.145T639.62 957.395t-252.474 42.606q-210.2 0-387.147-113.493q31.406 3.495 60.242 3.495q175.605 0 313.687-108.177q-81.877-1.501-146.654-50.409q-64.777-48.907-89.156-124.988q24.097 4.59 47.566 4.59q33.782 0 66.482-8.812q-87.378-17.5-144.975-87.04q-57.595-69.539-57.595-160.523v-3.126q53.633 29.696 114.416 31.592q-51.762-34.508-82.079-89.999q-30.319-55.491-30.319-120.102q0-68.143 34.151-126.908q95.022 116.607 230.278 186.392q135.258 69.786 290.212 77.514q-6.609-27.543-6.621-57.485q0-104.546 73.994-178.534Q747.623 0 852.169 0q109.456 0 184.392 79.711q85.618-16.959 160.333-61.349q-28.785 90.59-110.933 139.768q75.502-8.972 145.088-39.677z" />
+                      </svg>
+                    </div>
+                    <div className="flex items-center hover:bg-[#4026E1] hover:border-0 w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        viewBox="0 0 24 24"
+                        className="mx-auto fill-[#747474] stroke-[#747474] hover:stroke-white hover:fill-white duration-300"
+                      >
+                        <g fill="none">
+                          <path
+                            className="hover:stroke-white"
+                            strokeWidth="2"
+                            d="M3 11c0-3.771 0-5.657 1.172-6.828S7.229 3 11 3h2c3.771 0 5.657 0 6.828 1.172S21 7.229 21 11v2c0 3.771 0 5.657-1.172 6.828S16.771 21 13 21h-2c-3.771 0-5.657 0-6.828-1.172S3 16.771 3 13z"
+                          />
+                          <circle
+                            className="hover:fill-white"
+                            cx="16.5"
+                            cy="7.5"
+                            r="1.5"
+                            fill="#747474"
+                          />
+                          <circle
+                            className="hover:stroke-white"
+                            cx="12"
+                            cy="12"
+                            r="3"
+                            strokeWidth="2"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div className="flex items-center hover:bg-[#4026E1] hover:border-0 w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        viewBox="0 0 24 24"
+                        className="mx-auto fill-[#747474] hover:fill-white duration-300"
+                      >
+                        <g fill="none" fillRule="evenodd">
+                          <path
+                            className="hover:fill-white"
+                            d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                          />
+                          <path
+                            className="fill-[#747474] hover:fill-white"
+                            d="M12 5.5a6.5 6.5 0 1 0 6.326 8H13a1.5 1.5 0 0 1 0-3h7a1.5 1.5 0 0 1 1.5 1.5a9.5 9.5 0 1 1-2.801-6.736a1.5 1.5 0 1 1-2.116 2.127A6.48 6.48 0 0 0 12 5.5"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="bg-[#e6e2ff] w-3/4 mx-auto p-2 text-center text-lg font-medium rounded-sm group-hover:text-white group-hover:bg-[#4026E1] duration-500">
+                    Book Schedule
+                  </div>
+                </div>
               </div>
-              <div className="space-y-4">
-                <div className="space-y-2">
-                  <h3 className="text-2xl font-medium text-center  group-hover:text-[#4026E1] duration-500">
-                    Earle Goodman
-                  </h3>
-                  <p className="text-[#747474] text-center">Master s Degree</p>
-                </div>
-                {/* icon */}
-                <div className="flex gap-4 justify-center ">
-                  <div className=" flex items-center hover:bg-[#4026E1] hover:border-0 w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20px"
-                      height="20px"
-                      viewBox="0 0 24 24"
-                      className="mx-auto fill-[#747474] hover:fill-white"
-                    >
-                      <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396z" />
-                    </svg>
-                  </div>
-                  <div className="flex items-center hover:bg-[#4026E1] hover:border-0 w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474] ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="18.32px"
-                      height="16px"
-                      viewBox="0 0 1231.051 1000"
-                      className="mx-auto fill-[#747474] hover:fill-white"
-                    >
-                      <path d="M1231.051 118.453q-51.422 76.487-126.173 130.403q.738 14.46.738 32.687q0 101.273-29.53 202.791q-29.53 101.519-90.215 194.343T841.297 843.145T639.62 957.395t-252.474 42.606q-210.2 0-387.147-113.493q31.406 3.495 60.242 3.495q175.605 0 313.687-108.177q-81.877-1.501-146.654-50.409q-64.777-48.907-89.156-124.988q24.097 4.59 47.566 4.59q33.782 0 66.482-8.812q-87.378-17.5-144.975-87.04q-57.595-69.539-57.595-160.523v-3.126q53.633 29.696 114.416 31.592q-51.762-34.508-82.079-89.999q-30.319-55.491-30.319-120.102q0-68.143 34.151-126.908q95.022 116.607 230.278 186.392q135.258 69.786 290.212 77.514q-6.609-27.543-6.621-57.485q0-104.546 73.994-178.534Q747.623 0 852.169 0q109.456 0 184.392 79.711q85.618-16.959 160.333-61.349q-28.785 90.59-110.933 139.768q75.502-8.972 145.088-39.677z" />
-                    </svg>
-                  </div>
-                  <div className="flex items-center hover:bg-[#4026E1] hover:border-0 w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20px"
-                      height="20px"
-                      viewBox="0 0 24 24"
-                      className="mx-auto fill-[#747474] stroke-[#747474] hover:stroke-white hover:fill-white duration-300"
-                    >
-                      <g fill="none">
-                        <path
-                          className="hover:stroke-white"
-                          strokeWidth="2"
-                          d="M3 11c0-3.771 0-5.657 1.172-6.828S7.229 3 11 3h2c3.771 0 5.657 0 6.828 1.172S21 7.229 21 11v2c0 3.771 0 5.657-1.172 6.828S16.771 21 13 21h-2c-3.771 0-5.657 0-6.828-1.172S3 16.771 3 13z"
-                        />
-                        <circle
-                          className="hover:fill-white"
-                          cx="16.5"
-                          cy="7.5"
-                          r="1.5"
-                          fill="#747474"
-                        />
-                        <circle
-                          className="hover:stroke-white"
-                          cx="12"
-                          cy="12"
-                          r="3"
-                          strokeWidth="2"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                  <div className="flex items-center hover:bg-[#4026E1] hover:border-0 w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20px"
-                      height="20px"
-                      viewBox="0 0 24 24"
-                      className="mx-auto fill-[#747474] hover:fill-white duration-300"
-                    >
-                      <g fill="none" fillRule="evenodd">
-                        <path
-                          className="hover:fill-white"
-                          d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
-                        />
-                        <path
-                          className="fill-[#747474] hover:fill-white"
-                          d="M12 5.5a6.5 6.5 0 1 0 6.326 8H13a1.5 1.5 0 0 1 0-3h7a1.5 1.5 0 0 1 1.5 1.5a9.5 9.5 0 1 1-2.801-6.736a1.5 1.5 0 1 1-2.116 2.127A6.48 6.48 0 0 0 12 5.5"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <div className="bg-[#e6e2ff] w-3/4 mx-auto p-2 text-center text-lg font-medium rounded-sm group-hover:text-white group-hover:bg-[#4026E1] duration-500">
-                  Book Schedule
-                </div>
-              </div>
-            </div>
             ))}
-            
           </div>
           {/* 2box bự */}
           <div className="">
