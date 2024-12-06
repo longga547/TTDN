@@ -189,43 +189,50 @@ export default function Home() {
             <h1 className="lg:text-7xl text-6xl font-bold ">
               Learn Skills From Our Top Instructors
             </h1>
-            <div className="flex items-center justify-between md:mt-[60px] my-5">
+            <div className="flex items-center justify-between my-5">
               {/* nút Our Courses */}
-              <button className="relative bg-white text-xl text-purple-600 font-semibold py-4 px-8 rounded-3xl shadow-lg overflow-hidden transition-all duration-300 group">
+              <div className="relative bg-white text-xl text-purple-600 font-semibold py-4 px-8 rounded-3xl shadow-lg overflow-hidden transition-all duration-300 group">
                 <span className="absolute inset-0 bg-[#020d23] transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 rounded-3xl"></span>
                 <span className="relative z-10 transition-colors duration-200 group-hover:text-white">
                   Our Courses
                 </span>
-              </button>
+              </div>
               {/* nút Our Courses */}
               {/* box view */}
-              <div className="hidden lg:block bg-white rounded-md p-6 shadow-lg z-20 ">
-                <div className="flex space-x-1">
+              <div className="hidden md:block bg-white rounded-md py-6 px-8 z-20  ">
+                <div className="flex -space-x-2">
                   <Image
-                    src="https://via.placeholder.com/40"
                     alt="Instructor 1"
-                    className="rounded-full"
+                    className="w-10 h-10 rounded-full border-2 border-white"
+                    src="https://storage.googleapis.com/a1aa/image/WvRMeRDFny1lOSwBoZffSLRZqUbHheKp10wbtG370A2VoxdPB.jpg"
                     width={40}
                     height={40}
                   />
                   <Image
-                    src="https://via.placeholder.com/40"
                     alt="Instructor 2"
-                    className="rounded-full"
+                    className="w-10 h-10 rounded-full border-2 border-white"
+                    src="https://storage.googleapis.com/a1aa/image/eb6zpRHlGz0zBCumCWupZo77YG662suquauKLU0525pBNu7JA.jpg"
                     width={40}
                     height={40}
                   />
                   <Image
-                    src="https://via.placeholder.com/40"
                     alt="Instructor 3"
-                    className="rounded-full"
+                    className="w-10 h-10 rounded-full border-2 border-white"
+                    src="https://storage.googleapis.com/a1aa/image/vp97mgLh14KvKBPlffo21xUIbdBWwn4hMO3y9XeYoyuB04unA.jpg"
                     width={40}
                     height={40}
                   />
                   <Image
-                    src="https://via.placeholder.com/40"
                     alt="Instructor 4"
-                    className="rounded-full"
+                    className="w-10 h-10 rounded-full border-2 border-white"
+                    src="https://storage.googleapis.com/a1aa/image/I3lhmNwlGSZYCxuvjThv5ClSjAuLN5G8T0W4M2tFDnTgG39E.jpg"
+                    width={40}
+                    height={40}
+                  />
+                  <Image
+                    alt="Instructor 5"
+                    className="w-10 h-10 rounded-full border-2 border-white"
+                    src="https://storage.googleapis.com/a1aa/image/5kWMkYGLnexZGqg3RWuP8ACupqscGgfVMsxBgNztXmO9Zc3TA.jpg"
                     width={40}
                     height={40}
                   />
@@ -251,13 +258,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-1/3 h-full overflow-hidden z-0">
+          <div className="w-full h-full overflow-hidden relative z-0">
             <Image
               src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/slider/slider-thumb.png"
               alt=""
-              className="absolute h-full object-cover right-0 hidden md:block"
-              width={700} // Replace with actual width
-              height={300} // Replace with actual height
+              className="absolute top-0 right-0 w-auto h-full object-cover hidden md:block"
+              width={650}
+              height={200}
               priority
             />
           </div>
@@ -517,16 +524,25 @@ export default function Home() {
         </div>
         {/* One Platfrom Many Courses You */}
         <div className="flex my-4 ">
-          <div className="sm:flex md:px-[100px] sm:px-[60px] px-4 md:py-[80px] py-8 w-full lg:w-1/2 md:h-[500px] bg-[#002935] ">
-            <div className="flex-col space-y-6">
+          <div className="relative sm:flex md:px-[100px] sm:px-[60px] px-4 md:py-[80px] py-8 w-full lg:w-1/2 md:h-[500px]">
+            {/* Background Image */}
+            <Image
+              src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/help-bg.png"
+              alt="Background"
+              layout="fill"
+              objectFit="cover"
+              className="absolute inset-0 z-0"
+            />
+            {/* Content */}
+            <div className="relative z-10 flex-col space-y-6">
               <div>
                 <p className="text-white font-medium text-xl">
                   BEST LEARNING PLATFORM
                 </p>
               </div>
               <div>
-                <h1 className="text-white text-5xl font-medium w-full  ">
-                  One Platfrom Many Courses You
+                <h1 className="text-white text-5xl font-medium w-full">
+                  One Platform Many Courses You
                 </h1>
               </div>
               <div className="space-y-4 my-4 sm:mt-10 font-medium">
@@ -581,7 +597,7 @@ export default function Home() {
               </div>
             </div>
             {/* Responsive */}
-            <div className="w-1/2 block sm:hidden md:block lg:hidden sm:my-2 my-6">
+            <div className="relative z-10 w-1/2 block sm:hidden md:block lg:hidden sm:my-2 my-6 ">
               <div className="flex justify-center items-center w-[280px] h-[180px] top-[150px] bg-gradient-to-t from-[#836FFB] to-[#573CFF] text-white p-4">
                 <div className="flex-col justify-center space-y-4">
                   <p className="flex justify-center">
@@ -611,14 +627,14 @@ export default function Home() {
             {/* Responsive */}
           </div>
 
-          <div className="relative w-1/2 hidden lg:block">
+          <div className="relative w-1/2 hidden lg:block ">
             <div className="img w-full h-full">
               <Image
                 className="w-full h-full object-cover"
                 src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/help-thumb.png"
                 alt="Help"
-                width={500} // Set the appropriate width
-                height={500} // Set the appropriate height
+                width={500}
+                height={500}
                 priority
               />
             </div>
@@ -690,19 +706,22 @@ export default function Home() {
           <div className="4box flex-col space-y-4 ">
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
               {upcomingCourses.map((upcomingCourse, index) => (
-                <div key={index} className="flex bg-white p-12 gap-8 shadow-lg">
+                <div
+                  key={index}
+                  className="block sm:flex bg-white p-12 gap-8 space-y-4  shadow-lg"
+                >
                   <div>
                     <Image
                       src={upcomingCourse.anh}
                       alt="hi"
-                      className="duration-300 hover:scale-110 hover:brightness-110"
+                      className="duration-300 hover:scale-110 hover:brightness-110 mx-auto"
                       width={200}
                       height={150}
                       priority
                     />
                   </div>
                   <div>
-                    <div>
+                    <div className="sm:text-left text-center">
                       <p className="text-[#573CFF] font-medium">
                         {upcomingCourse.time}
                       </p>
@@ -768,7 +787,7 @@ export default function Home() {
                     </p>
                   </div>
                   {/* icon */}
-                  <div className="flex gap-4 justify-center ">
+                  <div className="flex gap-3 justify-center ">
                     <div className=" flex items-center hover:bg-[#4026E1] hover:border-0 w-[38px] h-[38px] rounded-[50%] border-2 border-[#747474]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -901,18 +920,32 @@ export default function Home() {
           </div>
         </div>
       </main>
+
       {/* Duy */}
       <div className="duyy">
         {/* PHAN 1 */}
         <div className="bg-gray-100 p-6">
           <div className="text-center mb-6">
-            <p className="text-lg text-indigo-600 font-medium uppercase mb-2">
+            <p className="flex items-center justify-center gap-2 text-lg text-indigo-600 font-medium uppercase mb-2">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="#4026E1"
+                    d="M14.25 4A6.25 6.25 0 0 0 8 10.25v27.5A6.25 6.25 0 0 0 14.25 44h24.5a1.25 1.25 0 1 0 0-2.5h-24.5a3.75 3.75 0 0 1-3.675-3H37.75A2.25 2.25 0 0 0 40 36.25v-26A6.25 6.25 0 0 0 33.75 4zM37.5 36h-27V10.25a3.75 3.75 0 0 1 3.75-3.75h19.5a3.75 3.75 0 0 1 3.75 3.75zM16.25 10A2.25 2.25 0 0 0 14 12.25v4.5A2.25 2.25 0 0 0 16.25 19h15.5A2.25 2.25 0 0 0 34 16.75v-4.5A2.25 2.25 0 0 0 31.75 10zm.25 6.5v-4h15v4z"
+                  />
+                </svg>
+              </span>
               LATEST VIDEO GALLERY
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-1">
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-1">
               We Provide Life Changing
             </h1>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
+            <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
               Video Tutorials
             </h1>
           </div>
@@ -1036,29 +1069,29 @@ export default function Home() {
 
           {/* 2.2 */}
           <div
-            className="flex flex-col sm:flex-row bg-center"
+            className="flex flex-col lg:flex-row bg-center py-[100px]"
             style={{
               backgroundImage:
                 "url('https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/resource/registration-bg.png')",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
             }}
           >
-            <div className="col-1 w-full sm:w-1/2 p-4 text-white flex flex-col text-left px-4 sm:px-[100px] mt-4 sm:mt-[100px]">
+            <div className="col-1 lg:w-1/2 w-full p-4 text-white flex flex-col text-left px-4 sm:px-[60px] ">
               <p className="text-lg font-semibold">Get Free Registration</p>
               <h1 className="text-3xl sm:text-5xl font-bold mt-4">
-                Register Your Account Get Free Access To 78,540
+                Register Your Account Get Free Access To 78,540 Online Courses
               </h1>
-              <h1 className="text-3xl sm:text-5xl font-bold mt-2">
-                Online Courses
-              </h1>
-              <p className="mt-4 text-lg">
+
+              <p className="mt-4 text-lg ">
                 Learning from an online event involves several key steps.
                 Firstly, it’s important to research and choose an event that
                 aligns with your learning objectives and interests. Once you’ve
                 registered for the event, make sure...
               </p>
             </div>
-            <div className="col-2 w-full sm:w-1/2 bg-opacity-75 rounded-lg shadow-lg">
-              <form className="p-6 bg-white w-4/5 rounded-lg mx-auto">
+            <div className="col-2 w-full lg:w-1/2 bg-opacity-75 rounded-lg px-4 sm:px-[60px]">
+              <form className="p-6 bg-white md:w-4/5 w-full rounded-lg ">
                 <h1 className="text-3xl font-bold mb-4">
                   Interested in Discussing
                 </h1>
@@ -1087,7 +1120,7 @@ export default function Home() {
                 ></textarea>
                 <button
                   type="submit"
-                  className="bg-blue-600 text-white py-2 rounded mt-2 h-[65px] w-full"
+                  className="bg-[#573CFF] text-white font-medium text-xl py-2 rounded mt-2 h-[65px] w-1/2"
                 >
                   Apply for it →
                 </button>
@@ -1102,10 +1135,23 @@ export default function Home() {
 
         {/* PHAN 3 */}
         <div className="text-center  mt-[80px] mb-[40px]">
-          <p className="text-lg text-indigo-600 font-medium uppercase mb-2">
+          <p className="flex items-center justify-center gap-2 text-lg text-indigo-600 font-medium uppercase mb-2">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24px"
+                height="24px"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#4026E1"
+                  d="M14.25 4A6.25 6.25 0 0 0 8 10.25v27.5A6.25 6.25 0 0 0 14.25 44h24.5a1.25 1.25 0 1 0 0-2.5h-24.5a3.75 3.75 0 0 1-3.675-3H37.75A2.25 2.25 0 0 0 40 36.25v-26A6.25 6.25 0 0 0 33.75 4zM37.5 36h-27V10.25a3.75 3.75 0 0 1 3.75-3.75h19.5a3.75 3.75 0 0 1 3.75 3.75zM16.25 10A2.25 2.25 0 0 0 14 12.25v4.5A2.25 2.25 0 0 0 16.25 19h15.5A2.25 2.25 0 0 0 34 16.75v-4.5A2.25 2.25 0 0 0 31.75 10zm.25 6.5v-4h15v4z"
+                />
+              </svg>
+            </span>
             Clients About Us
           </p>
-          <h1 className="text-5xl font-bold text-gray-800 mb-1">
+          <h1 className="md:text-5xl text-3xl font-bold text-gray-800 mb-1">
             What Our Students Say
           </h1>
         </div>
@@ -1307,10 +1353,23 @@ export default function Home() {
 
         {/* PHAN 4 */}
         <div className="text-center mt-[80px] mb-[40px]">
-          <p className="text-lg text-indigo-600 font-medium uppercase mb-2">
+          <p className="flex items-center justify-center gap-2 text-lg text-indigo-600 font-medium uppercase mb-2">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24px"
+                height="24px"
+                viewBox="0 0 48 48"
+              >
+                <path
+                  fill="#4026E1"
+                  d="M14.25 4A6.25 6.25 0 0 0 8 10.25v27.5A6.25 6.25 0 0 0 14.25 44h24.5a1.25 1.25 0 1 0 0-2.5h-24.5a3.75 3.75 0 0 1-3.675-3H37.75A2.25 2.25 0 0 0 40 36.25v-26A6.25 6.25 0 0 0 33.75 4zM37.5 36h-27V10.25a3.75 3.75 0 0 1 3.75-3.75h19.5a3.75 3.75 0 0 1 3.75 3.75zM16.25 10A2.25 2.25 0 0 0 14 12.25v4.5A2.25 2.25 0 0 0 16.25 19h15.5A2.25 2.25 0 0 0 34 16.75v-4.5A2.25 2.25 0 0 0 31.75 10zm.25 6.5v-4h15v4z"
+                />
+              </svg>
+            </span>
             News & Blogs
           </p>
-          <h1 className="text-5xl font-bold text-gray-800 mb-1">
+          <h1 className="md:text-5xl text-3xl font-bold text-gray-800 mb-1">
             Latest News & Blog
           </h1>
         </div>
@@ -1326,7 +1385,7 @@ export default function Home() {
                 height={300} // Set a height based on your design
               />
             </div>
-            <div className="p-6">
+            <div className="p-6 space-y-4">
               <div className="flex items-center">
                 <Image
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/shape1.png"
@@ -1397,7 +1456,7 @@ export default function Home() {
                 height={300} // Set a height based on your design
               />
             </div>
-            <div className="p-6">
+            <div className="p-6 space-y-4">
               <div className="flex items-center">
                 <Image
                   src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/shape2.png"
