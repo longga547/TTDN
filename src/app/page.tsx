@@ -1,5 +1,5 @@
 import Image from "next/image";
-export default function Home() {
+export default async  function Home() {
   //  Browse Categories 1
 
   const categories = [
@@ -177,6 +177,27 @@ export default function Home() {
       anh: "https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/team/team4.png",
     },
   ];
+
+  //Duy
+  // News & Blogs
+  interface Blog {
+    id: number;
+    title: string;
+    description: string;
+    content: string;
+  }
+  interface BlogData {
+    data: Blog[];
+  }
+  async function getBlogData(): Promise<BlogData> {
+    const res = await fetch("https://api-core.dsp.one/api/auth/post", {
+      cache: "no-store",
+    });
+    return res.json();
+  }
+  const blogData = await getBlogData();
+  console.log(blogData); 
+  // News & Blogs
   return (
     <div>
       <main>
@@ -1374,149 +1395,79 @@ export default function Home() {
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* box1 */}
-          <div className="shadow-xl px-[10px]">
-            <div>
-              <Image
-                src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/blog1.png"
-                alt="anh1"
-                className="w-full h-auto"
-                width={500} // Set a width based on your design
-                height={300} // Set a height based on your design
-              />
-            </div>
-            <div className="p-6 space-y-4">
-              <div className="flex items-center">
-                <Image
-                  src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/shape1.png"
-                  alt="anh1"
-                  className="w-12 h-12 rounded-full mr-2"
-                  width={48} // 12 * 4 (for Tailwind's default rem size)
-                  height={48} // 12 * 4 (for Tailwind's default rem size)
-                />
-                <p className="text-gray-500 font-normal">
-                  By-
-                  <br />
-                  Website_Stock
-                </p>
-              </div>
-              <p className="text-xl text-black font-bold mt-[20px]">
-                Useful VS Code Extensions Front-End Develop
-              </p>
-              <br />
-              <p className="text-gray-500">
-                Lorem ipsum dolor sit amet, atomorum ds sosidon ium est as Id
-                vim rrem princi pes suas molesti interpretaris
-              </p>
-              <div className="md:w-2/3 w-full flex items-center justify-between space-x-2 bg-gray-100">
-                <div className="flex items-center text-gray-500 rounded px-3 ">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 24 24"
-                    className="mr-1 text-sky-600"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M21 20.077L17.923 17H4.616q-.691 0-1.154-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615zM4.616 16H18.35L20 17.644V4.616q0-.231-.192-.424T19.385 4H4.615q-.23 0-.423.192T4 4.615v10.77q0 .23.192.423t.423.192M4 16V4z"
-                    />
-                  </svg>
-                  Comment (5)
-                </div>
-                <div className="flex items-center bg-blue-600 text-white rounded md:px-6 px-4 py-4 hover:bg-blue-700 transition duration-200 ">
-                  <span className="mr-1">More</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 48 48"
-                    className="h-5 w-5"
-                  >
-                    <path
-                      fill="currentColor"
-                      stroke="currentColor"
-                      strokeLinejoin="round"
-                      strokeWidth="4"
-                      d="m20 12l12 12l-12 12z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
+        {/* box1 */}
+        {blogData.data.slice(0, 2).map((blog) => (
+        <div key={blog.id} className="shadow-xl px-[10px]">
+          <div>
+            <Image
+              src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/blog1.png"
+              alt="anh1"
+              className="w-full h-auto"
+              width={500} // Set a width based on your design
+              height={300} // Set a height based on your design
+            />
           </div>
-          {/* box2 */}
-          <div className="shadow-xl px-[10px]">
-            <div>
+          <div className="p-6 space-y-4">
+            <div className="flex items-center">
               <Image
-                src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/blog2.png"
+                src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/shape1.png"
                 alt="anh1"
-                className="w-full h-auto"
-                width={500} // Set a width based on your design
-                height={300} // Set a height based on your design
+                className="w-12 h-12 rounded-full mr-2"
+                width={48}
+                height={48}
               />
+              <p className="text-gray-500 font-normal">
+                By-
+                <br />
+                Website_Stock
+              </p>
             </div>
-            <div className="p-6 space-y-4">
-              <div className="flex items-center">
-                <Image
-                  src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Edu/education-learning-lms-html-template-estudy-2023-12-07-15-45-43-utc/estudy/assets/images/blog/shape2.png"
-                  alt="anh1"
-                  className="w-12 h-12 rounded-full mr-2"
-                  width={48} // 12 * 4 (for Tailwind's default rem size)
-                  height={48} // 12 * 4 (for Tailwind's default rem size)
-                />
-                <p className="text-gray-500 font-normal">
-                  By-
-                  <br />
-                  Website_Stock
-                </p>
+            <p className="text-xl text-black font-bold mt-[20px]">
+            {blog.title}
+            </p>
+            <br />
+            <p className="text-gray-500">
+            {blog.description}
+            </p>
+            <div className="md:w-2/3 w-full flex items-center justify-between space-x-2 bg-gray-100">
+              <div className="flex items-center text-gray-500 rounded px-3 ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  className="mr-1 text-sky-600"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M21 20.077L17.923 17H4.616q-.691 0-1.154-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615zM4.616 16H18.35L20 17.644V4.616q0-.231-.192-.424T19.385 4H4.615q-.23 0-.423.192T4 4.615v10.77q0 .23.192.423t.423.192M4 16V4z"
+                  />
+                </svg>
+                Comment (5)
               </div>
-              <p className="text-xl text-black font-bold mt-[20px]">
-                Designing Better Linked Website And Email
-              </p>
-              <br />
-              <p className="text-gray-500">
-                Lorem ipsum dolor sit amet, atomorum ds sosidon ium est as Id
-                vim rrem princi pes suas molesti interpretaris
-              </p>
-              <div className="md:w-2/3 w-full flex items-center justify-between space-x-2 bg-gray-100">
-                <div className="flex items-center text-gray-500 rounded px-3 ">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 24 24"
-                    className="mr-1 text-sky-600"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M21 20.077L17.923 17H4.616q-.691 0-1.154-.462T3 15.385V4.615q0-.69.463-1.153T4.615 3h14.77q.69 0 1.152.462T21 4.615zM4.616 16H18.35L20 17.644V4.616q0-.231-.192-.424T19.385 4H4.615q-.23 0-.423.192T4 4.615v10.77q0 .23.192.423t.423.192M4 16V4z"
-                    />
-                  </svg>
-                  Comment (5)
-                </div>
-                <div className="flex items-center bg-blue-600 text-white rounded md:px-6 px-4 py-4 hover:bg-blue-700 transition duration-200 ">
-                  <span className="mr-1">More</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 48 48"
-                    className="h-5 w-5"
-                  >
-                    <path
-                      fill="currentColor"
-                      stroke="currentColor"
-                      strokeLinejoin="round"
-                      strokeWidth="4"
-                      d="m20 12l12 12l-12 12z"
-                    />
-                  </svg>
-                </div>
+              <div className="flex items-center bg-blue-600 text-white rounded md:px-6 px-4 py-4 hover:bg-blue-700 transition duration-200 ">
+                <span className="mr-1">More</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 48 48"
+                  className="h-5 w-5"
+                >
+                  <path
+                    fill="currentColor"
+                    stroke="currentColor"
+                    strokeLinejoin="round"
+                    strokeWidth="4"
+                    d="m20 12l12 12l-12 12z"
+                  />
+                </svg>
               </div>
             </div>
           </div>
         </div>
+      ))}
+      </div>
 
         {/* END PHAN 4 */}
       </div>
